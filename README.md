@@ -1,7 +1,8 @@
 # tachyonsJourney
 
 An educational game about a character named Tachyon and his journey
-across the universe.
+across the universe and time.
+
 His journey begins at the first planck time of the universe right after the Big Bang
 He meets interesting characters in his Journey from Infrared to Gamma and partakes
 in various events such as races against Sound and Light and mazes through wormholes.
