@@ -74,4 +74,3 @@ in his escape from the star.  But most importantly, his hope to
 travel and explore the universe was still alive.  Garry has now
 become a particle of the Green light.  FYI, Gamma rays are the most
 energetic packets of photons.  Green light is part of the visible spectrum.
-Although less powerful than Gamma Rays, it is still light.
