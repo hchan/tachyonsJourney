@@ -69,4 +69,9 @@ though each windows to progress to the next platoform.
 Time: 250 million years after the Big Bang
 And so Garry finally did it.  He left home.  The journey from the inside
 to out of the star had took him 50 million years.
-
+And Garry was also a changed particle.  He had lost a lot of energy
+in his escape from the star.  But most importantly, his hope to
+travel and explore the universe was still alive.  Garry has now
+become a particle of the Green light.  FYI, Gamma rays are the most
+energetic packets of photons.  Green light is part of the visible spectrum.
+Although less powerful than Gamma Rays, it is still light.
