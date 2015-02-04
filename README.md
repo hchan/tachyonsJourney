@@ -74,3 +74,9 @@ in his escape from the star.  But most importantly, his hope to
 travel and explore the universe was still alive.  Garry has now
 become a particle of the Green light.  FYI, Gamma rays are the most
 energetic packets of photons.  Green light is part of the visible spectrum.
+Tachyon: "So now where, Garry?"
+Garry: "I hear this there's a planet just a few minutes away from here, let's go!"
+Garry: "Try to keep keep up if you can ;)"
+And with that said, Garry took off at the speed of light.
+Mission: Find Tachyon amongst all the other particles that have escaped the star.
+Game: Identify Tachyon amongst all the other particles by his wavelength (Green)
