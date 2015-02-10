@@ -78,9 +78,12 @@ Tachyon: "So now where, Garry?"
 Garry: "I hear this there's a planet just a few minutes away from here, let's go!"
 Garry: "Try to keep keep up if you can ;)"
 And with that said, Garry took off at the speed of light.
-Mission: Find Tachyon amongst all the other particles that have escaped the star.
-Game: Identify Tachyon amongst all the other particles by his wavelength (Green)
+Mission: Find Garry amongst all the other particles that have escaped the star.
+Game: Identify Garry amongst all the other particles by his wavelength (Green)
 
+# Chapter 5 - The Goldilocks Zone
+Tachyon: "So which planet should we visit?"
+Garry: "I don't know yet"
 
 # Last Chapter
 Time: many centillion years later
