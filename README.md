@@ -87,7 +87,12 @@ Garry The Green Light: "I don't know yet, but I heard that organic life can exis
 I'd love to see organic life"
 Tachyon: "Goldilocks and Organic Life ... can you explain that a bit more please?"
 Garry The Green Light: "It is believed that organic life, life of matter with cells, can only exist in conditions 
-that are not too hot or too cold.  I is further believed that the necessities of organic life flourish best with liquid water.  If a planet is too close to its star, water will evaporate into gas and if it is too far, it will be ice in which case, both extremes do not favor organic life"
+that are not too hot or too cold.  I is further believed that the necessities of organic life flourish best with liquid water.  If a planet is too close to its star, water will evaporate into gas and if it is too far, it will turn
+to ice, in which case, both extremes do not favor organic life"
+Mission: Find a planet in the Goldilocks Zone
+Game: Move left and right between the heat of the sun and the cold temperatures of the universe.
+
+# Chapter 6 - Not quite what we expected
 
 
 # Last Chapter
