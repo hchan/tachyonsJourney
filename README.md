@@ -92,8 +92,13 @@ to ice, in which case, both extremes do not favor organic life"
 Mission: Find a planet in the Goldilocks Zone
 Game: Move left and right between the heat of the sun and the cold temperatures of the universe.
 
-# Chapter 6 - Not quite what we expected
-
+# Chapter 6 - The circle of life
+And they found life.
+It was rich in vegetation.  And Garry, being a photon, gave his life ... to bring life to the planet.
+He gave up his energy to be photosynthesized to the plants on the planet.
+Tachyon was sad to see Garry go, but happy to know that Garry had completed his desire.
+Perhaps he journey didn't end, but was just transformed.
+As for Tachyon, he spent the next 3+ billion years in this solar system
 
 # Last Chapter
 Time: many centillion years later
