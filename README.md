@@ -83,7 +83,12 @@ Game: Identify Garry amongst all the other particles by his wavelength (Green)
 
 # Chapter 5 - The Goldilocks Zone
 Tachyon: "So which planet should we visit?"
-Garry: "I don't know yet"
+Garry The Green Light: "I don't know yet, but I heard that organic life can exist in a Goldilocks zone and
+I'd love to see organic life"
+Tachyon: "Goldilocks and Organic Life ... can you explain that a bit more please?"
+Garry The Green Light: "It is believed that organic life, life of matter with cells, can only exist in conditions 
+that are not too hot or too cold.  I is further believed that the necessities of organic life flourish best with liquid water.  If a planet is too close to its star, water will evaporate into gas and if it is too far, it will be ice in which case, both extremes do not favor organic life"
+
 
 # Last Chapter
 Time: many centillion years later
