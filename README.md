@@ -120,7 +120,16 @@ Game: Although Tachyon has no resting mass, he still has momentum and considerin
 faster-than-light speed, he has a lot of momentum.  Use Tachyon's momentum to push Earth
 to a Goldilock's Zone
 
-# Chapter 7 - from Dinosaurs to humans
+# Chapter 7 - from Dinosaurs to mammals
+Like a magical formula, the Goldilock's zone proved to be a place where life grows.
+But sometimes things are unpredictable and even with these ideal conditions for life ...
+life still comes with extinction.
+In fact, there were 5 great extinctions on Earth.  The last extinction were the dinosaurs.
+The next species to rule the Earth after the dinosaurs were humans.  Belonging to the
+animal kingdom: mammals, Tachyon enjoyed watching them evolve.  They were always
+smart creatures.
+Mission: Help molly the mammal carry an acorn from the Acorn tree to her home
+Game: Jumping game.
 
 
 # Last Chapter
