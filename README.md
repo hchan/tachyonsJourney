@@ -131,6 +131,19 @@ smart creatures.
 Mission: Help molly the mammal carry an acorn from the Acorn tree to her home
 Game: Jumping game.
 
+# Chapter 8 - The smartest man in Earth's History
+As Earth evolved, the most brilliant scientist came to be.
+His name was Albert Einstein.  He was famous for many scientific discoveries
+including special relativity and E=mc2.
+He also theorized that the universe wasn't static.
+Mission:  Add Mysterious Force of Gravity and Mysterious Force of Expansion
+to the universe to the universe model until Einstein is content
+Game: Create a 5 / 14 ratio of Mysterious Force of Gravity to Mysterious Force of Expansion
+This would later be known as Dark Mater (25% of the Universe) and Dark Energy (70%) of the universe
+Einstein had proposed that the universe was still expanding!!
+
+
+
 
 # Last Chapter
 Time: many centillion years later
