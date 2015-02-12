@@ -102,7 +102,11 @@ As for Tachyon, he spent the next 3+ billion years in this solar system.
 He witnessed the early beginnings of this planet to the migration of the organic life to this planet to others.
 The cycle of this solar system didn't stop there ... Tachyon had witnessed the birth of planets and also
 the demise of its creator - its star.  The star had gone supernova, but even that wasn't the end or the beginning.
-The solar system was in a state of being pulled in to itself, but the sun has become a black hole.
+The solar system was in a state of being pulled in to itself, the sun has imploded into a black hole.
+Mission: Help Tachyon escape the Horizon of the Black Hole.  It is said that nothing, can escape the gravitational
+pull of a black hole, not even light.  Help Tachyon become a legend with his faster-than-light-speed ability by escaping the horizon.
+Game: on the furthest point of the eclipse, time it right so that Tachyon can break free.  Its a timing/tap game
+
 
 # Last Chapter
 Time: many centillion years later
