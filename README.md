@@ -93,7 +93,7 @@ Mission: Find a planet in the Goldilocks Zone
 Game: Move left and right between the heat of the sun and the cold temperatures of the universe.
 
 # Chapter 6 - The circle of life
-And they found life.
+And they found life.  The planet was called Donum
 It was rich in vegetation.  And Garry, being a photon, gave his life ... to bring life to the planet.
 He gave up his energy to be photosynthesized to the plants on the planet.
 Tachyon was sad to see Garry go, but happy to know that Garry had completed his desire.
@@ -106,6 +106,21 @@ The solar system was in a state of being pulled in to itself, the sun has implod
 Mission: Help Tachyon escape the Horizon of the Black Hole.  It is said that nothing, can escape the gravitational
 pull of a black hole, not even light.  Help Tachyon become a legend with his faster-than-light-speed ability by escaping the horizon.
 Game: on the furthest point of the eclipse, time it right so that Tachyon can break free.  Its a timing/tap game
+
+# Chapter 7 - A planet called Earth
+Although the circle of life didn't begin or end with the blackhole, Tachyon thought
+that we would explore other galaxies.
+In particular he chose a galaxy called the Milky Way and a solar system with a star
+called Sun.
+It was the early centuries for this solar system and organic life was on its way.
+The planet in this solar sytem with the greatest chance of sustaining life was Earth.
+Having fond memories of Donum, Tachyon decided to do what he can do to bring life to Earth.
+Mission: Help Tachyon by push Earth to the Goldilocks Zone
+Game: Although Tachyon has no resting mass, he still has momentum and considering his
+faster-than-light speed, he has a lot of momentum.  Use Tachyon's momentum to push Earth
+to a Goldilock's Zone
+
+# Chapter 7 - from Dinosaurs to humans
 
 
 # Last Chapter
