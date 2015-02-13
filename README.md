@@ -139,13 +139,42 @@ He also theorized that the universe wasn't static.
 Mission:  Add Mysterious Force of Gravity and Mysterious Force of Expansion
 to the universe to the universe model until Einstein is content
 Game: Create a 5 / 14 ratio of Mysterious Force of Gravity to Mysterious Force of Expansion
-This would later be known as Dark Mater (25% of the Universe) and Dark Energy (70%) of the universe
+This would later be known as Dark Mater (consisting of 25% of the Universe's mass) 
+and Dark Energy (consisting of 70% of the Universe's mass) of the universe
 Einstein had proposed that the universe was still expanding!!
+However later, Einstein would call this theory his greatest blunder.
+In truth, his greatest blunder was ... correct
+
+# Chapter 9 - The War Within The Universe - Dark Matter vs Dark Energy
+As humans evolved, so did their understanding of the Universe.
+In fact, scientists have even predicted how the universe will end.
+There are 2 great forces in the universe currently at war - Dark Matter and Dark Energy.
+Dark Matter exerts a gravitational force to pull in matter.
+Should the victor of this war be Dark Matter, the universe will see a Big Crunch, and converge
+into a singularity.
+Dark Energy on the other hand is the evil twin of Dark Matter.  It exerts a force
+to prevent the Universe from collapsing.  In fact, its force accelerates the expansion
+of the universe.  Should the victor of this war be Dark Energy, the Universe will
+end in a Big Freeze.
+As of the Earth year 2015, scientists have predicted that the victor will be Dark Energy
+and the universe would end in a Big Freeze.
+Tachyon was shocked and disturbed to learn this from Earth scientists.  Tachyon was
+convinced that there was a fixed geometry in the universe and that there must be
+some curvature to prevent infinite expansion.
+He could not believe there was an end.  So he set forth to look for the most distant
+object and see if it was bound by the universe.
+Mission:  Help Tachyon reach the furthest star and see what is beyond.
+Game: Navigate past asteroids until you reach the further star
+
+And when Tachyon got there, he realized ... that was not the furthest point of
+the universe.  The Earth scientists were correct, the universe was still expanding.
+In fact, even as fast as Tachyon was, with faster-than-light speed, he realized that
+the universe was expanding even faster than he could travel.
+That meant ... the universe was doomed to a Big Freeze.
 
 
 
-
-# Last Chapter
+# Chapter 10 - You Found Me
 Time: many centillion years later
 And they slowed disappeared.
 It seems like the war of the universe has come to an end and the
@@ -153,7 +182,7 @@ victor is Dark Energy.
 Once again, Tachyon was lost and all alone.
 And so he stayed where he was as the universe got colder and colder ...
 As the temperature of the universe started to drop to absolute zero,
-so did Tachyon's hope to be happy.
+so did Tachyon's hope to be happy and to find anyone, anything to experience besides the void.
 But then it happened ...
 an unprecedented phenomenon in physics ... at least at the scale of the universe.
 The universe was experiencing a phase transition.  Just like the effects of water as it changes from liquid to solid, the universe was entering its own
