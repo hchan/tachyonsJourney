@@ -20,7 +20,7 @@ wars of great forces (dark matter and dark energy).
 # Chapter 1 - She said Yes
 Tachyon wakes up finds himself amongst other Tachyon particles.
 
-| Tachyon: "Hi, fancy meeting you here"
+| Tachyon: "Hi, fancy meeting you here"  
 |Girl Tachyon: "Yeah, its cozy in here (blush)"
 Tachyon: "Hey, its a bit less crowded in over there, want to join me for a spin?"
 Girl Tachyon: "Yes ... (a bit reluctantly).  YES (quite affirmatively after some thought)"
