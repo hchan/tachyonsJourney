@@ -18,14 +18,16 @@ galaxies, peaceful goldilock zones and the raging
 wars of great forces (dark matter and dark energy).
 
 # Chapter 1 - She said Yes
-Tachyon wakes up finds himself amongst other Tachyon particles.
+Tachyon wakes up finds himself amongst other Tachyon particles.  They were all rather squished
+as if compressed in a single point in space, a singularity.
 
 Tachyon: "Hi, fancy meeting you here"  
 Girl Tachyon: "Yeah, its cozy in here (blush)"  
 Tachyon: "Hey, its a bit less crowded in over there, want to join me for a spin?"  
-Girl Tachyon: "Yes ... (a bit reluctantly).  YES (quite affirmatively after some thought)"
-But too late, for it then happened ... the Big Bang.  Particles started flying around ... including
-the Girl Tachyon.
+Girl Tachyon: "Yes ... (a bit reluctantly).  *YES* (quite affirmatively after some thought)"  
+
+But it was too late, for then, it happened ... the Big Bang.  The singularity had exploded and
+particles started to fly outwards ... including the Girl Tachyon.
 Mission: Keep the Girl Tachyon in range.
 Game: Dodge asteroids as you try to keep up with the Girl Tachyon
 
