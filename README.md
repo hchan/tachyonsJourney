@@ -175,7 +175,8 @@ In fact, even as fast as Tachyon was, with faster-than-light speed, he realized 
 the universe was expanding even faster than he could travel.
 That meant ... the universe was doomed to a Big Freeze.
 
-
+# TODO - give MULTIPLE choices for Tachyon, each will determine how the Universe
+Ends, i.e. Big Rip, Big Crunch, Big Freeze, Phase Transition, No End to the Universe
 
 # Chapter 10 - You Found Me
 Time: many centillion years later
