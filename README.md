@@ -28,8 +28,8 @@ Girl Tachyon: "Yes ... (a bit reluctantly).  *YES* (quite affirmatively after so
 
 But it was too late, for then, it happened ... the Big Bang.  The singularity had exploded and
 particles started to fly outwards ... including the Girl Tachyon.
-Mission: Keep the Girl Tachyon in range.
-Game: Dodge asteroids as you try to keep up with the Girl Tachyon
+*Mission*: Keep the Girl Tachyon in range.  
+*Game*: Dodge asteroids as you try to keep up with the Girl Tachyon
 
 # Chapter 2 - Lost and all alone
 Time: 200 million years after the big bang
