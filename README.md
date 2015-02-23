@@ -6,7 +6,7 @@ across our universe and time.
 His journey begins at the first planck time (a small fraction of a second) after the Big Bang, 
 the beginning of our universe.
 Tachyon, the main protagonist, is both curious and optimistic about the universe and travels
-around at a speed faster than light to unravel its mysteries.
+around at a speed faster than light to experience its awe and unravel its mysteries.
 Tachyon is curious about who he is and in his journey he wants to make this universe a better
 place.
 Join Tachyon as he discovers fundamental physics such as gravity, fusion and state transition.
@@ -33,24 +33,24 @@ particles started to fly outwards ... including the Girl Tachyon.
 
 # Chapter 2 - Lost and all alone
 Time: 200 million years after the big bang
-But to no avail.  Within a few planck time, she was gone.  They were all gone.
-Tachyon was lost ... and all alone.
-For the next 200 million years, he just stayed there moping ...
-But one day ...
-Harry the Hydrogen: "Coming through!"
-Helen the Hydrogen: "Yipeeee!"
-Tachyon: "??"
-Tachyon: "Where are you going?"
-Harry & Helen : "We're getting married!"
-Tachyon: "Oh, congrats, I'm so happy for you"
-Harry: "The ceremony is at the center of the star."
-Tachyon: "Star, what's that?"
-Harry: "Come along, we'll show you"
-Mission: Help Harry and Helen "Fuse" in their matrinomy.  
-Game: Control both Hydrogen particles to collide.  
-Harry starts at the north, and helen from the west.
-Tap both at roughly the same time so they collide in the center and fuse.
-This process is called nuclear fusion ... the energy used to create a star
+But to no avail...  Within a few planck time, she was gone.  They were all gone.
+Tachyon was lost ... and all alone.  
+For the next 200 million years, he just stayed there moping ...  
+But one day ...  
+Harry the Hydrogen: "Coming through!"  
+Helen the Hydrogen: "Yipeeee!"  
+Tachyon: "??"  
+Tachyon: "Where are you going?"  
+Harry & Helen : "We're getting married!"  
+Tachyon: "Oh, congrats, I'm so happy for you"  
+Harry: "The ceremony is at the center of the star."  
+Tachyon: "Star, what's that?"  
+Harry: "Come along, we'll show you"  
+*Mission*: Help Harry and Helen "Fuse" in their matrinomy.    
+*Gam*e: Control both Hydrogen particles to collide.  
+Harry starts at the north, and helen from the west.  
+Tap both at roughly the same time so they collide in the center and fuse.  
+This process is called nuclear fusion ... the energy used to create a star  
 
 # Chapter 3 - The birth of the Incredible Hulk ... I mean Gamma Ray
 Their wedding was awesome.
