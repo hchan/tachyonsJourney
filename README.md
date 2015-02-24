@@ -53,20 +53,20 @@ Tap both at roughly the same time so they collide in the center and fuse.
 This process is called nuclear fusion ... the energy used to create a star  
 
 # Chapter 3 - The birth of the Incredible Hulk ... I mean Gamma Ray
-Their wedding was awesome.
-In fact millions and billions of Hydrogen particles were getting married
-at the center of this star.  The fireworks are fantastic, but what was
-more exciting was that Tachyon had now met a new friend: Garry the Gamma Ray.
+Their wedding was awesome.  
+In fact billions and trillions of Hydrogen particles were getting married
+at the center of this star.  The fireworks were fantastic, but what was
+more exciting was that Tachyon had now met a new friend: Garry the Gamma Ray.  
 Garry was just another kid, with the exception that he had A LOT of energy
-and was born in this solar nuclear fusion process.
+and was born in this solar nuclear fusion process.  
 Garry wanted to explore the universe and the first thing he wanted to do
-was to leave home, then center of the star.
+was to leave home, his birthplace, the center of the star.  
 Even with all the energy Garry had, this was not an easy task.
-The journey is going to be perilous.
-Mission: Help Garry escape home and into the vacuum of the Universe
-Game: Help Garry jump from platform to platform (upwards).  There is
+The journey was going to take a lot of dedication and persistence.  
+*Mission*: Help Garry escape home and into the vacuum of the Universe  
+*Game*: Help Garry jump from platform to platform (upwards).  There is
 a small window in each platform and each platform moves.  Jump
-though each windows to progress to the next platoform.
+though each windows to progress to the next platform.
 
 # Chapter 4 - The Escape into the Vacuum of the Universe
 Time: 250 million years after the Big Bang
