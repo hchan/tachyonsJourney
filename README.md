@@ -69,20 +69,26 @@ a small window in each platform and each platform moves.  Jump
 though each windows to progress to the next platform.
 
 # Chapter 4 - The Escape into the Vacuum of the Universe
-Time: 250 million years after the Big Bang
-And so Garry finally did it.  He left home.  The journey from the inside
-to out of the star had took him 50 million years.
+Time: 250 million years after the Big Bang  
+And so Garry finally did it.  He left home!  The journey from the inside
+to vacuum of the universe had *only* taken him 50 million years.  
 And Garry was also a changed particle.  He had lost a lot of energy
-in his escape from the star.  But most importantly, his hope to
-travel and explore the universe was still alive.  Garry has now
-become a particle of the Green light.  FYI, Gamma rays are the most
-energetic packets of photons.  Green light is part of the visible spectrum.
-Tachyon: "So now where, Garry?"
-Garry: "I hear this there's a planet just a few minutes away from here, let's go!"
-Garry: "Try to keep keep up if you can ;)"
-And with that said, Garry took off at the speed of light.
-Mission: Find Garry amongst all the other particles that have escaped the star.
-Game: Identify Garry amongst all the other particles by his wavelength (Green)
+in his escape from the star.  Garry has now
+become a particle of the Green light.  But most importantly, his hope to
+travel and explore the universe was now a reality.  He was a free
+particle now racing across space.  
+FYI, Gamma rays are the most
+energetic packets of photons.  The amount of energy it took Garry to
+escape the sun had transformed him into Green light, an energy wavelength
+that is part of the visible spectrum.  
+Tachyon: "Congratulations Garry!"  
+Garry: "Thanks, I didn't think it was going to be that tough!"  
+Tachyon: "It fas fun.  But now where, Garry?"  
+Garry: "I hear this there's a planet just a few minutes away from here, let's go!"  
+Garry: "Try to keep keep up if you can ;)"  
+And with that said, Garry took off at the speed of light.  
+*Mission*: Find Garry amongst all the other particles that have escaped the star.
+*Game*: Identify Garry amongst all the other particles by his wavelength (Green)
 
 # Chapter 5 - The Goldilocks Zone
 Tachyon: "So which planet should we visit?"
