@@ -160,15 +160,18 @@ However later, Einstein would call this theory his greatest blunder.
 In truth, his greatest blunder was ... correct
 
 # Chapter 11 - The War Within The Universe - Dark Matter vs Dark Energy
-As humans evolved, so did their understanding of the Universe.
-In fact, scientists have even predicted how the universe will end.
+Einstein's theory of an exanding universe had huge ramifications, and it
+also affected Tachyon's mood and moreover his optimism.  
+Before the end, let's start off with the cause.  
 There are 2 great forces in the universe currently at war - Dark Matter and Dark Energy.
 Dark Matter exerts a gravitational force to pull in matter.
 Should the victor of this war be Dark Matter, the universe will see a Big Crunch, and converge
 into a singularity.
 Dark Energy on the other hand is the evil twin of Dark Matter.  It exerts a force
 to prevent the Universe from collapsing.  In fact, its force accelerates the expansion
-of the universe.  Should the victor of this war be Dark Energy, the Universe will
+of the universe.  This was what Einstein had theorized had existed.
+Future earth scientists further believed this theory and expanded it even further.
+Should the victor of this war be Dark Energy, the Universe will
 end in a Big Freeze.
 As of the Earth year 2015, scientists have predicted that the victor will be Dark Energy
 and the universe would end in a Big Freeze.
