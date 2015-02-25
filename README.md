@@ -206,13 +206,13 @@ an unprecedented phenomenon in physics ... at least at the scale of the universe
 The universe was experiencing a phase transition.  Just like the effects of water as it changes from liquid to solid, the universe was entering its own
 phase transition.  "Strings" started slowly appearing similar to how ice crystals are creating as liquid water changes to ice.  
 There was in fact a pattern to these "strings".  The seemed to be connected like a web and most strings seemed to be attached to a single point.  
-Tachyon decided to pull on the closest string that lead to the center of something ... Like a chord, it sent a note or a message ... down the string.
+Tachyon decided to pull on the closest string that lead to the center of something ... Like a chord, it sent a note or a message ... down the string.  
 Almost instantaneously, the string relayed a message back.
 Again, Tachyon pulled the string ... and again the string responded.
-Was there someone at the end of the string trying to communicate back?
-There was only one way to find out ... with all of Tachyon's speed, he followed the string.
-Mission: Follow the string
-Game: as you progress, we go through the summary of all his friends that he met in the past.  A history of his journey.
+Was there someone at the end of the string trying to communicate back?  
+There was only one way to find out ... with all of Tachyon's speed, he followed the string.  
+*Mission*: Follow the string  
+*Game*: as you progress, we go through the summary of all his friends that he met in the past.  A history of his journey.  
 
 At the end of the string there was indeed someone waiting.
 Girl Tachyon: "Hey you!!"
