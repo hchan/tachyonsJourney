@@ -182,8 +182,8 @@ object and see if it was bound by the universe.
 *Mission*:  Help Tachyon reach the furthest star and see what is beyond.  
 *Game*: Navigate past asteroids until you reach the further star  
 
-And when Tachyon got there, he realized ... that was not the furthest point of
-the universe.  The Earth scientists were correct, the universe was still expanding.
+And when Tachyon got there, he realized ... that there was no the furthest point of
+the universe, for it was still expanding.  The Earth scientists were correct, the universe was still expanding.
 In fact, even as fast as Tachyon was, with faster-than-light speed, he realized that
 the universe was expanding even faster than he could travel.
 That meant ... the universe was doomed to a Big Freeze.
