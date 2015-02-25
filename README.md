@@ -103,25 +103,27 @@ Tachyon:  "Wow, I'm game, let's find this planet!"
 *Game*: Move left and right between the heat of the sun and the cold temperatures of the universe.
 
 # Chapter 6 - The circle of life
-And they found life.  The planet was called Donum
-It was rich in vegetation.  And Garry, being a photon, gave his life ... to bring life to the planet.
-He gave up his energy to be photosynthesized to the plants on the planet.
+And together they found a planet with life.  The planet was called Donum  
+It was rich in vegetation.  And Garry, being a photon, gave his life ... to bring life to the planet.  
+He gave up his energy to be photosynthesized to the plants on the planet.  
 Tachyon was sad to see Garry go, but happy to know that Garry had completed his desire.
-Perhaps he journey didn't end, but rather it was just a transformation in a cicle of life.
-As for Tachyon, he spent the next 3+ billion years in this solar system.
+Perhaps he journey didn't end, perhaps sacrifice is too strong of a term to describe what
+Garry did, but rather it was just a transformation in a cicle of life.  
+As for Tachyon, he was inspired by Garry's dreams and so he spent the next 3 billion years in this solar system.  
 He witnessed the early beginnings of this planet to the migration of the organic life to this planet to others.
-The cycle of this solar system didn't stop there ... Tachyon had witnessed the birth of planets and also
-the demise of its creator - its star.  The star had gone supernova, but even that wasn't the end or the beginning.
-The solar system was in a state of being pulled in to itself, the sun has imploded into a black hole.
-Mission: Help Tachyon escape the Horizon of the Black Hole.  It is said that nothing, can escape the gravitational
-pull of a black hole, not even light.  Help Tachyon become a legend with his faster-than-light-speed ability by escaping the horizon.
-Game: on the furthest point of the eclipse, time it right so that Tachyon can break free.  Its a timing/tap game
+Yet still, the circle of life of this solar system didn't stop there ... eventually the centerpiece of
+this solar system, the star had to go through its own transformation.  
+After 3 billion years, the star had gone supernova, but even that wasn't the end or the beginning.
+The solar system was in a state of being pulled in to itself, the sun has imploded into a black hole.  
+*Mission*: Help Tachyon escape the Horizon of the Black Hole.  It is said that nothing, can escape the gravitational
+pull of a black hole, not even light.  Help Tachyon become a legend with his faster-than-light-speed ability by escaping the horizon.  
+*Game*: on the furthest point of the eclipse, time it right so that Tachyon can break free.  Its a timing/tap game
 
 # Chapter 7 - A planet called Earth
 Although the circle of life didn't begin or end with the blackhole, Tachyon thought
-that we would explore other galaxies.
-In particular he chose a galaxy called the Milky Way and a solar system with a star
-called Sun.
+that we would explore other galaxies.  
+In particular he chose a galaxy called the Milky Way and a specific solar system with
+a yellow star called: Sun.  
 It was the early centuries for this solar system and organic life was on its way.
 The planet in this solar sytem with the greatest chance of sustaining life was Earth.
 Having fond memories of Donum, Tachyon decided to do what he can do to bring life to Earth.
