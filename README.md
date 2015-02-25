@@ -146,20 +146,20 @@ In fact, Tachyon gave a helping hand to the evolution of small mammals to humans
 *Game*: Jumping game.
 
 # Chapter 9 - The smartest man in Earth's History
-As Earth evolved, the most brilliant scientist came to be.
+As Earth evolved, the most brilliant scientist came to be.  
 His name was Albert Einstein.  He was famous for many scientific discoveries
-including special relativity and E=mc2.
-He also theorized that the universe wasn't static.
-Mission:  Add Mysterious Force of Gravity and Mysterious Force of Expansion
-to the universe to the universe model until Einstein is content
-Game: Create a 5 / 14 ratio of Mysterious Force of Gravity to Mysterious Force of Expansion
+including special relativity and E=mc2.  
+He also theorized that the universe wasn't static.  
+*Mission*:  Add a Mysterious Force of Gravity and Mysterious Force of Expansion
+to the universe in Einstein's mind until he is content with this model  
+*Game*: Create a 5 : 14 ratio of Mysterious Force of Gravity to Mysterious Force of Expansion
 This would later be known as Dark Mater (consisting of 25% of the Universe's mass) 
-and Dark Energy (consisting of 70% of the Universe's mass) of the universe
+and Dark Energy (consisting of 70% of the Universe's mass) of the universe  
 Einstein had proposed that the universe was still expanding!!
-However later, Einstein would call this theory his greatest blunder.
+However later, Einstein would call this theory his greatest blunder.  
 In truth, his greatest blunder was ... correct
 
-# Chapter 9 - The War Within The Universe - Dark Matter vs Dark Energy
+# Chapter 11 - The War Within The Universe - Dark Matter vs Dark Energy
 As humans evolved, so did their understanding of the Universe.
 In fact, scientists have even predicted how the universe will end.
 There are 2 great forces in the universe currently at war - Dark Matter and Dark Energy.
@@ -189,7 +189,7 @@ That meant ... the universe was doomed to a Big Freeze.
 # TODO - give MULTIPLE choices for Tachyon, each will determine how the Universe
 Ends, i.e. Big Rip, Big Crunch, Big Freeze, Phase Transition, No End to the Universe
 
-# Chapter 10 - You Found Me
+# Chapter 12 - You Found Me
 Time: many centillion years later
 And they slowed disappeared.
 It seems like the war of the universe has come to an end and the
