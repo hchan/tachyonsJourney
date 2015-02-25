@@ -175,13 +175,12 @@ Should the victor of this war be Dark Energy, the Universe will
 end in a Big Freeze.
 As of the Earth year 2015, scientists have predicted that the victor will be Dark Energy
 and the universe would end in a Big Freeze.
-Tachyon was shocked and disturbed to learn this from Earth scientists.  Tachyon was
-convinced that there was a fixed geometry in the universe and that there must be
-some curvature to prevent infinite expansion.
-He could not believe there was an end.  So he set forth to look for the most distant
-object and see if it was bound by the universe.
-Mission:  Help Tachyon reach the furthest star and see what is beyond.
-Game: Navigate past asteroids until you reach the further star
+Tachyon was shocked and disturbed to learn this from Earth scientists.  Even now,
+Tachyon didn't know what he was looking for, but now he knew his journey would
+inevitably come to an end ... eventually.  Disturbed by this theory, Tachyon set forth to look for the most distant
+object and see if it was bound by the universe.  
+*Mission*:  Help Tachyon reach the furthest star and see what is beyond.  
+*Game*: Navigate past asteroids until you reach the further star  
 
 And when Tachyon got there, he realized ... that was not the furthest point of
 the universe.  The Earth scientists were correct, the universe was still expanding.
