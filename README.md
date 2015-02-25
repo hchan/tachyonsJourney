@@ -124,26 +124,28 @@ Although the circle of life didn't begin or end with the blackhole, Tachyon thou
 that we would explore other galaxies.  
 In particular he chose a galaxy called the Milky Way and a specific solar system with
 a yellow star called: Sun.  
-It was the early centuries for this solar system and organic life was on its way.
+It was the early centuries for this solar system and organic life was on its way.  
 The planet in this solar sytem with the greatest chance of sustaining life was Earth.
-Having fond memories of Donum, Tachyon decided to do what he can do to bring life to Earth.
-Mission: Help Tachyon by push Earth to the Goldilocks Zone
-Game: Although Tachyon has no resting mass, he still has momentum and considering his
-faster-than-light speed, he has a lot of momentum.  Use Tachyon's momentum to push Earth
-to a Goldilock's Zone
+Having fond memories of Donum, Tachyon decided to do what he can do to bring life to Earth.  
+*Mission*: Help Tachyon by push Earth to the Goldilocks Zone  
+*Game*: Although Tachyon has no resting mass, he still has momentum and considering his
+faster-than-light speed, he has a lot of momentum (fyi, the momentum is a product
+of relativistic mass and his speed).  Use Tachyon's momentum to push Earth
+to a Goldilock's Zone.  
 
-# Chapter 7 - from Dinosaurs to mammals
+# Chapter 8 - From Dinosaurs to mammals
 Like a magical formula, the Goldilock's zone proved to be a place where life grows.
 But sometimes things are unpredictable and even with these ideal conditions for life ...
-life still comes with extinction.
-In fact, there were 5 great extinctions on Earth.  The last extinction were the dinosaurs.
-The next species to rule the Earth after the dinosaurs were humans.  Belonging to the
-animal kingdom: mammals, Tachyon enjoyed watching them evolve.  They were always
-smart creatures.
-Mission: Help molly the mammal carry an acorn from the Acorn tree to her home
-Game: Jumping game.
+life still comes with extinction.  
+In fact, there were 6 great extinctions on Earth.  The 5th last extinction were the dinosaurs.  
+And when the dinosaurs laid to rest, humans became the heir to this planet.  
+Humans, aka homo erectus belong to the animal kingdom called mammals.  It took a while
+for mammals to evolve, but it was worth the wait and Tachyon had fun watching this evolution.
+In fact, Tachyon gave a helping hand to the evolution of small mammals to humans.  
+*Mission*: Help molly the mammal carry an acorn from the Acorn tree to her home  
+*Game*: Jumping game.
 
-# Chapter 8 - The smartest man in Earth's History
+# Chapter 9 - The smartest man in Earth's History
 As Earth evolved, the most brilliant scientist came to be.
 His name was Albert Einstein.  He was famous for many scientific discoveries
 including special relativity and E=mc2.
