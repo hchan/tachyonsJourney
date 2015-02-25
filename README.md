@@ -192,19 +192,20 @@ That meant ... the universe was doomed to a Big Freeze.
 Ends, i.e. Big Rip, Big Crunch, Big Freeze, Phase Transition, No End to the Universe
 
 # Chapter 12 - You Found Me
-Time: many centillion years later
-And they slowed disappeared.
+Time: many centillion years later  
+And they all slowly disappeared.
 It seems like the war of the universe has come to an end and the
 victor is Dark Energy.
 Once again, Tachyon was lost and all alone.
-And so he stayed where he was as the universe got colder and colder ...
+And so he stayed where he was as the universe got colder and colder ...  
 As the temperature of the universe started to drop to absolute zero,
-so did Tachyon's hope to be happy and to find anyone, anything to experience besides the void.
-But then it happened ...
-an unprecedented phenomenon in physics ... at least at the scale of the universe.
+so did Tachyon's hope to be happy and to find anyone, anything to experience besides the void.  
+
+But then it happened ...  
+an unprecedented phenomenon in physics ... at least at the scale of the universe.  
 The universe was experiencing a phase transition.  Just like the effects of water as it changes from liquid to solid, the universe was entering its own
-phase transition.  "Strings" started slowly appearing similar to how ice crystals are creating as liquid water changes to ice.
-There was in fact a pattern to these "strings".  The seemed to be connected like a web and most strings seemed to be attached to a single point.
+phase transition.  "Strings" started slowly appearing similar to how ice crystals are creating as liquid water changes to ice.  
+There was in fact a pattern to these "strings".  The seemed to be connected like a web and most strings seemed to be attached to a single point.  
 Tachyon decided to pull on the closest string that lead to the center of something ... Like a chord, it sent a note or a message ... down the string.
 Almost instantaneously, the string relayed a message back.
 Again, Tachyon pulled the string ... and again the string responded.
