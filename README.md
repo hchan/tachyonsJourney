@@ -214,27 +214,27 @@ There was only one way to find out ... with all of Tachyon's speed, he followed 
 *Mission*: Follow the string  
 *Game*: as you progress, we go through the summary of all his friends that he met in the past.  A history of his journey.  
 
-At the end of the string there was indeed someone waiting.
-Girl Tachyon: "Hey you!!"
-Tachyon: "Oh, wow, I never thought I'd see you again"
-Girl Tachyon: "Me too.  Where have you been?"
-Tachyon: "Umm ... pretty much all over the universe.  And yourself?"
-Girl Tachyon: "Generally around here and the other side..."
-Tachyon: "Here and the other side?  Where are we?"
-Girl Tachyon: "We're at the center where the Big Bang started!"
-She points to a black hole just a few meters away.
+At the end of the string there was indeed someone waiting.  
+Girl Tachyon: "Hey you!!"  
+Tachyon: "Oh, wow, I never thought I'd see you again"  
+Girl Tachyon: "Me too.  Where have you been?"  
+Tachyon: "Umm ... pretty much all over the universe.  And yourself?"  
+Girl Tachyon: "Generally around here and the other side..."  
+Tachyon: "Here and the other side?  Where are we?"  
+Girl Tachyon: "We're at the center where the Big Bang started!"  
+She points to a black hole just a few meters away.  
 Tachyon: "Oh wow, is that the last black hole ... I thought they
-were all gone millions of years ago"
-Girl Tachyon: "No silly ... its a worm hole, not a black hole"
-Tachyon: "And where does that lead to?"
-Girl Tachyon: "To another universe of course.  Wanna join me?"
-Tachyon: "Yes ... YES"
-Girl Tachyon: "OK, follow me and try not to get lost this time"
+were all gone millions of years ago"  
+Girl Tachyon: "No silly ... its a worm hole, not a black hole"  
+Tachyon: "And where does that lead to?"  
+Girl Tachyon: "To another universe of course.  Wanna join me?"  
+Tachyon: "Yes ... YES"  
+Girl Tachyon: "OK, follow me and try not to get lost this time"  
 She holds his hand and then leads him into the worm hole
-In the faint distance, you hear them talk.
-Tera: "BTW, my name is Tera, what is yours?"
-Tachyon: "I don't have one ..."
-Tera: "How about I call you Terry from now on?"
+In the faint distance, you hear them talk.  
+Tera: "BTW, my name is Tera, what is yours?"  
+Tachyon: "I don't have one ..."  
+Tera: "How about I call you Terry from now on?"  
 As the hold hands and disappear, a love shape appears over the wormhole
 
 
