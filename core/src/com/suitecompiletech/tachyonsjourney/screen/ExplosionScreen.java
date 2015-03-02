@@ -2,6 +2,8 @@ package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -33,6 +35,12 @@ public class ExplosionScreen implements Screen {
 					(Gdx.graphics.getWidth() - font.getBounds(text).width) / 2,
 					(font.getBounds(text).height) * 3);
 		}
+		
+		if (TimeUtils.timeSinceMillis(startTime) > 5000 && !hasMusicStarted) {
+			hasMusicStarted = true;
+			Music music = Gdx.audio.newMusic(Gdx.files.internal("music/Loving Everything I Find.mp3"));			
+			music.play();
+		}
 		//Gdx.app.log(ExplosionScreen.class.getSimpleName(), delta + "");
 		batch.end();
 	}
@@ -42,10 +50,13 @@ public class ExplosionScreen implements Screen {
 	}
 
 	private long startTime = TimeUtils.millis();
+	private boolean hasMusicStarted = false;
 
 	@Override
 	public void show() {
-
+		//Sound sound = Gdx.audio.newSound(Gdx.files.internal("music/Loving Everything I Find.mp3"));
+		Sound sound = Gdx.audio.newSound(Gdx.files.internal("sound/explosion.mp3"));
+		sound.play();
 		batch = new SpriteBatch();
 		FreeTypeFontGenerator freeTypeFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/STONB___.TTF"));
 		FreeTypeFontParameter parameter = new FreeTypeFontParameter();

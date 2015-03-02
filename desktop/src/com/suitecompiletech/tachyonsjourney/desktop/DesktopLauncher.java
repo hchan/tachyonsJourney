@@ -21,7 +21,7 @@ public class DesktopLauncher {
 			config.width = 1024;
 			config.height = 768;
 			config.fullscreen = false;
-			config.title = "Fcuk Cancer";
+			config.title = "Tachyon's Journey";
 			config.addIcon("img/icon.png", FileType.Internal);
 			
 			
