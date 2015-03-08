@@ -22,7 +22,8 @@ public class DesktopLauncher {
 			config.height = 768;
 			config.fullscreen = false;
 			config.title = "Tachyon's Journey";
-			config.addIcon("img/icon.png", FileType.Internal);
+			// image not working on Linux yet ... file has to be 512x512
+			// config.addIcon("img/icon.png", FileType.Internal); 
 			
 			
 			new LwjglApplication(new TachyonsJourneyGame(), config);
