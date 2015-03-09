@@ -1,0 +1,6 @@
+To copy and paste multiple layers,
+first make a layer group, then duplicate it
+to move the duplicated layer group, choose the Move (m) tool
+and SHIFT-mouse move
+
+To select a color, use the color picker tool: o
