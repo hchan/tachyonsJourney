@@ -27,7 +27,7 @@ Tachyon: "Hey, its a bit less crowded in over there, want to join me for a spin?
 Girl Tachyon: "Yes ... (a bit reluctantly).  *YES* (quite affirmatively after some thought)"  
 
 But it was too late, for then, it happened ... the Big Bang.  The singularity had exploded and
-particles started to fly outwards ... including the Girl Tachyon.
+particles started to fly outwards ... including the Girl Tachyon.  
 *Mission*: Keep the Girl Tachyon in range.  
 *Game*: Dodge asteroids as you try to keep up with the Girl Tachyon
 
