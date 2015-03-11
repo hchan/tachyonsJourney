@@ -24,13 +24,7 @@ public class TachyonsJourneyGame extends Game {
 	@Override
 	public void create() {
 		game = this;
-		// set the loaders for the generator and the fonts themselves
-		FileHandleResolver resolver = new InternalFileHandleResolver();
-		assetManager.setLoader(FreeTypeFontGenerator.class,
-				new FreeTypeFontGeneratorLoader(resolver));
-		assetManager.setLoader(BitmapFont.class, ".ttf",
-				new FreetypeFontLoader(resolver));
-		assetManager.load("fonts/STONB___.TTF", FreeTypeFontGenerator.class);
+		AssetManagerHelper.loadAssets();
 		
 
 		assetManager.load("music/Loving Everything I Find.mp3", Music.class);

@@ -1,23 +1,11 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.ParticleEffect;
-import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
-import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
-import com.badlogic.gdx.utils.TimeUtils;
+import com.suitecompiletech.tachyonsjourney.FontHelper;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
-import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
-import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class TitleScreen extends BaseScreen {
 	
@@ -39,8 +27,8 @@ public class TitleScreen extends BaseScreen {
 		
 
 		String text = "Tachyon's Journey";
-		FreeTypeFontGenerator freeTypeFontGenerator = TachyonsJourneyGame.assetManager.get("fonts/STONB___.TTF", FreeTypeFontGenerator.class);
-		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
+		
+	
 		if (curFontSize == 0) {
 			curFontSize = initalFontSize;			
 		} else {
@@ -53,9 +41,8 @@ public class TitleScreen extends BaseScreen {
 				deltaTimeBeforeFlush = 0;
 			}
 		}
-		parameter.size = curFontSize;
-		parameter.color = Color.YELLOW;
-		font = freeTypeFontGenerator.generateFont(parameter);
+		
+		font = FontHelper.generateFont("fonts/STONB___.TTF", curFontSize, Color.YELLOW);
 		spriteBatch.begin();
 		font.draw(spriteBatch, text,
 				(Gdx.graphics.getWidth() - font.getBounds(text).width) / 2,
