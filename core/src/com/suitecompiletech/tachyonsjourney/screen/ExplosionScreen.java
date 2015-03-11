@@ -15,15 +15,16 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.badlogic.gdx.utils.TimeUtils;
+import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
-public class ExplosionScreen implements Screen {
-	private SpriteBatch spriteBatch;
+public class ExplosionScreen extends BaseScreen {
+	
 	private ParticleEffect effect;
 	private BitmapFont font;
 	private float stateTime;
-	private long startTime = TimeUtils.millis();
+	private long startTime = 0;
 	private TachyonScreaming tachyonScreaming;
 	private float multiplier = 1.0001f;
 	
@@ -45,20 +46,14 @@ public class ExplosionScreen implements Screen {
 
 		if (TimeUtils.timeSinceMillis(startTime) > 5000
 				&& GameUtil.startEventOnce("hasMusicStarted")) {
-			Music music = Gdx.audio.newMusic(Gdx.files
-					.internal("music/Loving Everything I Find.mp3"));
+			
+			Music music = TachyonsJourneyGame.assetManager.get("music/Loving Everything I Find.mp3", Music.class);
 			music.play();
 		}
 
 		if (TimeUtils.timeSinceMillis(startTime) > 10000) {
 			TextureRegion currentFrame = tachyonScreaming.getAnimation()
 					.getKeyFrame(stateTime, true);
-			
-			//currentFrame.setW
-			//spriteBatch.draw(currentFrame, tachyonScreaming.getX(), tachyonScreaming.getY());
-			//spriteBatch.draw(currentFrame, tachyonScreaming.getX(), tachyonScreaming.getY(), tachyonScreaming.getWidth(), tachyonScreaming.getHeight());
-			
-		
 			float width = Gdx.graphics.getWidth()/10 *multiplier;
 			float height = Gdx.graphics.getWidth()/10 * multiplier;
 			float x = (Gdx.graphics.getWidth()-width)/2;
@@ -69,17 +64,10 @@ public class ExplosionScreen implements Screen {
 			sprite.setX(x);
 			sprite.setY(y);
 			sprite.setSize(width, height);
-			//sprite.setScale(0.2f);
 			sprite.setRotation(90f * multiplier);
 			sprite.setOrigin(width/2, height/2);
 			sprite.draw(spriteBatch);
-			//spriteBatch.draw(currentFrame, x, y, originX, originY, width, height, scaleX, scaleY, rotation, true);
-					
 			multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
-			
-			//tachyonScreaming.setWidth(tachyonScreaming.getWidth()* 1.005f);
-			//tachyonScreaming.setHeight(tachyonScreaming.getHeight()* 1.005f);
-			//tachyonScreaming.setSize(tachyonScreaming.getWidth()*1f, tachyonScreaming.getHeight()*1f);
 
 		}
 		// Gdx.app.log(ExplosionScreen.class.getSimpleName(), delta + "");
@@ -94,32 +82,24 @@ public class ExplosionScreen implements Screen {
 
 	@Override
 	public void show() {
-		stateTime = 0f;
+		super.show();
+		startTime = TimeUtils.millis();
 		tachyonScreaming = new TachyonScreaming();
-		// Sound sound =
-		// Gdx.audio.newSound(Gdx.files.internal("music/Loving Everything I Find.mp3"));
-		Sound sound = Gdx.audio.newSound(Gdx.files
-				.internal("sound/explosion.mp3"));
+		Sound sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
-		spriteBatch = new SpriteBatch();
-		FreeTypeFontGenerator freeTypeFontGenerator = new FreeTypeFontGenerator(
-				Gdx.files.internal("fonts/STONB___.TTF"));
+		
+		FreeTypeFontGenerator freeTypeFontGenerator = TachyonsJourneyGame.assetManager.get("fonts/STONB___.TTF", FreeTypeFontGenerator.class);
 		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
 		parameter.size = 34;
 		parameter.color = Color.YELLOW;
 		font = freeTypeFontGenerator.generateFont(parameter);
-		effect = new ParticleEffect();
-		effect.load(Gdx.files.internal("effects/explosion.p"),
-				Gdx.files.internal("img"));
+		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
+
 		effect.setPosition(Gdx.graphics.getWidth() / 2,
 				Gdx.graphics.getHeight() / 2);
 		effect.start();
 	}
 
-	@Override
-	public void hide() {
-		dispose();
-	}
 
 	@Override
 	public void pause() {
@@ -131,7 +111,7 @@ public class ExplosionScreen implements Screen {
 
 	@Override
 	public void dispose() {
-		spriteBatch.dispose();
+		super.dispose();
 		effect.dispose();
 	}
 }
