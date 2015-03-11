@@ -15,6 +15,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.badlogic.gdx.utils.TimeUtils;
+import com.suitecompiletech.tachyonsjourney.FontHelper;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
@@ -88,11 +89,8 @@ public class ExplosionScreen extends BaseScreen {
 		Sound sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
 		
-		FreeTypeFontGenerator freeTypeFontGenerator = TachyonsJourneyGame.assetManager.get("fonts/STONB___.TTF", FreeTypeFontGenerator.class);
-		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
-		parameter.size = 34;
-		parameter.color = Color.YELLOW;
-		font = freeTypeFontGenerator.generateFont(parameter);
+		
+		font = FontHelper.generateFont("fonts/STONB___.TTF", 34, Color.YELLOW);
 		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
 
 		effect.setPosition(Gdx.graphics.getWidth() / 2,
