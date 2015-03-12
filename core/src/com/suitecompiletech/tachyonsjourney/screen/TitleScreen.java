@@ -1,18 +1,21 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.suitecompiletech.tachyonsjourney.FontHelper;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
+import com.suitecompiletech.tachyonsjourney.font.FontHelper;
+import com.suitecompiletech.tachyonsjourney.font.FontParam;
 
 public class TitleScreen extends BaseScreen {
 	
+	public static final String CAPTION_TEXT = "Tachyon's Journey";
 	private BitmapFont font;
 	private boolean shrinkFont = false;
-	private int initalFontSize = 2;
-	private int curFontSize = 0;
+	private float initalFontScale = 0.1f;
+	private float curFontScale = 0f;
 	private float deltaTimeBeforeFlush = 0;
 	
 	@Override
@@ -26,33 +29,47 @@ public class TitleScreen extends BaseScreen {
 	    stateTime += Gdx.graphics.getDeltaTime();  
 		
 
-		String text = "Tachyon's Journey";
-		
 	
-		if (curFontSize == 0) {
-			curFontSize = initalFontSize;			
+		if (curFontScale == 0) {
+			curFontScale = initalFontScale;			
 		} else {
-			if (deltaTimeBeforeFlush > 0.005) {
+			//if (deltaTimeBeforeFlush > 0.5) {
+			
+				float scaleVelocity = 0.01f;
+				if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
+					scaleVelocity = 0.1f;
+				}
+				
 				if (!shrinkFont) {
-					curFontSize += 1;
+					curFontScale += scaleVelocity;
 				} else {
-					curFontSize -= 1;
+					curFontScale -= scaleVelocity;
 				}
 				deltaTimeBeforeFlush = 0;
-			}
+			//}
 		}
 		
-		font = FontHelper.generateFont("fonts/STONB___.TTF", curFontSize, Color.YELLOW);
-		spriteBatch.begin();
-		font.draw(spriteBatch, text,
-				(Gdx.graphics.getWidth() - font.getBounds(text).width) / 2,
-				(Gdx.graphics.getHeight()) / 2);
-		spriteBatch.end();
-		if (font.getBounds(text).width >= Gdx.graphics.getWidth()) {
+		FontParam fontParam = new FontParam();
+		fontParam.setTtfFileName("fonts/STONB___.TTF");
+		fontParam.setText(CAPTION_TEXT);
+		fontParam.setColor(Color.YELLOW);
+		font = FontHelper.getTTF(fontParam);
+		font.setScale(curFontScale);
+		if (curFontScale >= 1) {
 			shrinkFont = true;
-		} else if (shrinkFont && curFontSize <= initalFontSize) {
+			return;
+		} else if (shrinkFont && curFontScale <= initalFontScale) {
 			TachyonsJourneyGame.game.doNewScreen(new ExplosionScreen(), this);
 		}
+		
+		
+		spriteBatch.begin();
+		font.draw(spriteBatch, CAPTION_TEXT,
+				(Gdx.graphics.getWidth() - font.getBounds(CAPTION_TEXT).width) / 2,
+				(Gdx.graphics.getHeight()) / 2);
+		//font.dispose();
+		spriteBatch.end();
+		
 	}
 
 	

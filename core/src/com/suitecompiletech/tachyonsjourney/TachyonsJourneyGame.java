@@ -32,8 +32,9 @@ public class TachyonsJourneyGame extends Game {
 
 		assetManager.load("effects/explosion.p", ParticleEffect.class);
 
-		setScreen(new TitleScreen());
 		assetManager.finishLoading();
+		setScreen(new TitleScreen());
+//		setScreen(new ExplosionScreen());
 	}
 
 	@Override

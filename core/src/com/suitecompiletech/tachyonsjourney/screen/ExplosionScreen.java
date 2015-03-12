@@ -15,13 +15,14 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.badlogic.gdx.utils.TimeUtils;
-import com.suitecompiletech.tachyonsjourney.FontHelper;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
+import com.suitecompiletech.tachyonsjourney.font.FontHelper;
+import com.suitecompiletech.tachyonsjourney.font.FontParam;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class ExplosionScreen extends BaseScreen {
-	
+	public static final String CAPTION_TEXT = "THE BIG BANG";
 	private ParticleEffect effect;
 	private BitmapFont font;
 	private float stateTime;
@@ -38,11 +39,11 @@ public class ExplosionScreen extends BaseScreen {
 		spriteBatch.begin();
 		effect.draw(spriteBatch, delta);
 
-		String text = "THE BIG BANG";
+	
 		if (TimeUtils.timeSinceMillis(startTime) > 1500) {
-			font.draw(spriteBatch, text,
-					(Gdx.graphics.getWidth() - font.getBounds(text).width) / 2,
-					(font.getBounds(text).height) * 3);
+			font.draw(spriteBatch, CAPTION_TEXT,
+					(Gdx.graphics.getWidth() - font.getBounds(CAPTION_TEXT).width) / 2,
+					(font.getBounds(CAPTION_TEXT).height) * 3);
 		}
 
 		if (TimeUtils.timeSinceMillis(startTime) > 5000
@@ -89,8 +90,12 @@ public class ExplosionScreen extends BaseScreen {
 		Sound sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
 		
-		
-		font = FontHelper.generateFont("fonts/STONB___.TTF", 34, Color.YELLOW);
+		FontParam fontParam = new FontParam();
+		fontParam.setTtfFileName("fonts/STONB___.TTF");
+		fontParam.setText(CAPTION_TEXT);
+		fontParam.setColor(Color.YELLOW);
+		font = FontHelper.getTTF(fontParam);
+		font.setScale(0.25f);
 		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
 
 		effect.setPosition(Gdx.graphics.getWidth() / 2,
