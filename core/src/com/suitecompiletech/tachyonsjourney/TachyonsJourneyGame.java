@@ -27,10 +27,7 @@ public class TachyonsJourneyGame extends Game {
 		AssetManagerHelper.loadAssets();
 		
 
-		assetManager.load("music/Loving Everything I Find.mp3", Music.class);
-		assetManager.load("sound/explosion.mp3", Sound.class);
-
-		assetManager.load("effects/explosion.p", ParticleEffect.class);
+		
 
 		assetManager.finishLoading();
 		setScreen(new TitleScreen());

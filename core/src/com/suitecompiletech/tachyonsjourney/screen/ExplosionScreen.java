@@ -72,6 +72,12 @@ public class ExplosionScreen extends BaseScreen {
 			multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
 
 		}
+		if (TimeUtils.timeSinceMillis(startTime) > 10000
+				&& GameUtil.startEventOnce("tachyonScreamingSound")) {
+			Sound sound = TachyonsJourneyGame.assetManager.get("sound/tachyonScreaming.ogg", Sound.class);
+			sound.play(1, 0.9f, 0f);
+		}
+		
 		// Gdx.app.log(ExplosionScreen.class.getSimpleName(), delta + "");
 		spriteBatch.end();
 	}
