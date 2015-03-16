@@ -1,10 +1,12 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.TimeUtils;
+import com.suitecompiletech.tachyonsjourney.sprite.BlueBall;
 import com.suitecompiletech.tachyonsjourney.sprite.RedBall;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
@@ -45,7 +47,7 @@ public class BirthStarScreen extends BaseScreen {
 			width = Gdx.graphics.getWidth()/20;
 			height = Gdx.graphics.getWidth()/20;
 			redBall.setSize(width, height);
-			redBall.setOrigin(width/2, height/2);
+			redBall.setOriginCenter();//(width/2, height/2);
 			redBall.setX((Gdx.graphics.getWidth()-redBall.getWidth())/2);
 			redBall.setY((Gdx.graphics.getHeight()-redBall.getHeight())/2);
 			float rotation = 90f * multiplier;
@@ -53,8 +55,40 @@ public class BirthStarScreen extends BaseScreen {
 				multiplier = 1.01f;
 			}
 			redBall.setRotation(rotation);
+			
+		
+		
+			
+			BlueBall blueBall = new BlueBall();
+			width = Gdx.graphics.getWidth()/80;
+			height = Gdx.graphics.getWidth()/80;
+			blueBall.setSize(width, height);
+			blueBall.setOriginCenter();
+			blueBall.setX((Gdx.graphics.getWidth()-blueBall.getWidth())/2);
+			blueBall.setY((Gdx.graphics.getHeight()-blueBall.getHeight())/2);
+			blueBall.setRotation(rotation);
+			float theta = (float) (stateTime % 2*Math.PI);
+			updateSpriteXYForEllipse(theta, redBall.getX() + redBall.getOriginX(), redBall.getY() + redBall.getOriginY(), 80, 40, blueBall);
+			
+		if (theta > 0.5 * Math.PI && theta < 1.5* Math.PI) {
+			blueBall.draw(spriteBatch);
 			redBall.draw(spriteBatch);
+		} else {
+			redBall.draw(spriteBatch);
+			blueBall.draw(spriteBatch);
+		}
+			
 			//spriteBatch.draw(redBall, (Gdx.graphics.getWidth()-redBall.getWidth())/2, (Gdx.graphics.getHeight()-redBall.getHeight())/2);
 			spriteBatch.end();
 	}
+	
+	
+	  public void updateSpriteXYForEllipse(float theta, float xCenter, float yCenter, float xRadius, float yRadius, Sprite sprite) {
+		  float x = (float) (xCenter + xRadius*Math.cos(theta));
+		  float y = (float) (yCenter - yRadius*Math.sin(theta));
+		  x -= sprite.getWidth()/2;
+		  y -= sprite.getHeight()/2;
+		  sprite.setX(x);
+		  sprite.setY(y);
+	   }
 }
