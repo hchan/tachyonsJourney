@@ -26,16 +26,14 @@ public class ExplosionScreen extends BaseScreen {
 	private ParticleEffect effect;
 	private BitmapFont font;
 	private float stateTime;
-	private long startTime = 0;
+	
 	private TachyonScreaming tachyonScreaming;
 	private float multiplier = 1.0001f;
 	
 	@Override
 	public void render(float delta) {
-		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);  
-	
-	    stateTime += Gdx.graphics.getDeltaTime();  
+		super.render(delta);
+		
 		spriteBatch.begin();
 		effect.draw(spriteBatch, delta);
 
@@ -53,6 +51,7 @@ public class ExplosionScreen extends BaseScreen {
 			music.play();
 		}
 
+		Sprite sprite = null;
 		if (TimeUtils.timeSinceMillis(startTime) > 10000) {
 			TextureRegion currentFrame = tachyonScreaming.getAnimation()
 					.getKeyFrame(stateTime, true);
@@ -62,7 +61,7 @@ public class ExplosionScreen extends BaseScreen {
 			float y = (Gdx.graphics.getHeight()-height)/2;
 			
 		
-			Sprite sprite = new Sprite(currentFrame);
+			sprite = new Sprite(currentFrame);
 			sprite.setX(x);
 			sprite.setY(y);
 			sprite.setSize(width, height);
@@ -78,6 +77,9 @@ public class ExplosionScreen extends BaseScreen {
 			sound.play(1, 0.9f, 0f);
 		}
 		
+		if (sprite != null && sprite.getHeight() >= Gdx.graphics.getHeight() * 0.9f) {
+			TachyonsJourneyGame.game.doNewScreen(new BirthStarScreen(), this);
+		}
 		// Gdx.app.log(ExplosionScreen.class.getSimpleName(), delta + "");
 		spriteBatch.end();
 	}
