@@ -67,7 +67,7 @@ public class BirthStarScreen extends BaseScreen {
 			blueBall.setX((Gdx.graphics.getWidth()-blueBall.getWidth())/2);
 			blueBall.setY((Gdx.graphics.getHeight()-blueBall.getHeight())/2);
 			blueBall.setRotation(rotation);
-			float theta = (float) (stateTime % 2*Math.PI);
+			float theta = (float) (stateTime*2 % 2*Math.PI);
 			updateSpriteXYForEllipse(theta, redBall.getX() + redBall.getOriginX(), redBall.getY() + redBall.getOriginY(), 80, 40, blueBall);
 			
 		if (theta > 0.5 * Math.PI && theta < 1.5* Math.PI) {
