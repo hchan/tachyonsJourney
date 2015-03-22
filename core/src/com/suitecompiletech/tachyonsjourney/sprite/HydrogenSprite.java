@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import java.util.Random;
 
-public class HydrogenSprite extends Sprite {
+public class HydrogenSprite extends SpritePlus {
 	private RedBall redBall;
 	private BlueBall blueBall;
 	private float multiplier = 1.01f;
@@ -20,9 +20,10 @@ public class HydrogenSprite extends Sprite {
 	private float moveYAmountPerSecond;
 
 	private float stateTime = 0;
+	private boolean visible;
 
 	public HydrogenSprite(int x, int y) {
-
+		visible = true;
 		velocity = rand.nextFloat() * 2 + 1.5f;
 		ellipseRotation = (float) (rand.nextFloat() * 2 * Math.PI);
 		float width, height;
@@ -52,14 +53,15 @@ public class HydrogenSprite extends Sprite {
 
 	@Override
 	public void draw(Batch batch) {
-		if (theta > 0.5 * Math.PI && theta < velocity * Math.PI) {
-			blueBall.draw(batch);
-			redBall.draw(batch);
-		} else {
-			redBall.draw(batch);
-			blueBall.draw(batch);
+		if (visible) {
+			if (theta > 0.5 * Math.PI && theta < velocity * Math.PI) {
+				blueBall.draw(batch);
+				redBall.draw(batch);
+			} else {
+				redBall.draw(batch);
+				blueBall.draw(batch);
+			}
 		}
-		
 	}
 
 	public void render(float delta) {
@@ -144,6 +146,14 @@ public class HydrogenSprite extends Sprite {
 
 	public void setRand(Random rand) {
 		this.rand = rand;
+	}
+
+	public void setVisible(boolean visible) {
+		this.visible = visible;
+	}
+
+	public boolean isVisible() {
+		return visible;
 	}
 
 }

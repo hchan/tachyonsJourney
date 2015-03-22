@@ -47,5 +47,6 @@ public class AssetManagerHelper {
 		
 		
 		TachyonsJourneyGame.assetManager.load("effects/explosion.p", ParticleEffect.class);
+		TachyonsJourneyGame.assetManager.load("effects/hydrogenCollision.p", ParticleEffect.class);
 	}
 }
