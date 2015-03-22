@@ -8,8 +8,9 @@ import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
 public class BirthStarScreen extends BaseScreen {
 	private TachyonWatching tachyonWatching = new TachyonWatching();
-	private HydrogenSprite hydrogenSprite1 = new HydrogenSprite();
-
+	private HydrogenSprite hydrogenSprite1 = new HydrogenSprite(0,0);
+	private HydrogenSprite hydrogenSprite2 = new HydrogenSprite(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight());
+	
 	@Override
 	public void render(float delta) {
 		super.render(delta);
@@ -31,10 +32,10 @@ public class BirthStarScreen extends BaseScreen {
 		sprite.setOrigin(width / 2, height / 2);
 		spriteBatch.begin();
 		sprite.draw(spriteBatch);
-		hydrogenSprite1.render(stateTime);
+		hydrogenSprite1.render(delta);
+		hydrogenSprite2.render(delta);
 		hydrogenSprite1.draw(spriteBatch);
-		hydrogenSprite1.getRedBall().setX(hydrogenSprite1.getRedBall().getX()+1);
-		hydrogenSprite1.getRedBall().setY(hydrogenSprite1.getRedBall().getY()+1);
+		hydrogenSprite2.draw(spriteBatch);
 		spriteBatch.end();
 	}
 	
@@ -42,8 +43,7 @@ public class BirthStarScreen extends BaseScreen {
 	@Override
 	public void show() {
 		super.show();
-		hydrogenSprite1.getRedBall().setX(0);
-		hydrogenSprite1.getRedBall().setY(0);
+		
 	}
 	
 }

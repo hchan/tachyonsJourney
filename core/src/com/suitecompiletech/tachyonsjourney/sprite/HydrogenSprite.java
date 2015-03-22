@@ -13,8 +13,15 @@ public class HydrogenSprite extends Sprite {
 	private float velocity;
 	private Random rand = new Random();
 	private float ellipseRotation;
+	private int oppositeEndX;
+	private int oppositeEndY;
+	private float secondsToCrossScreen = 8f;
+	private float moveXAmountPerSecond;
+	private float moveYAmountPerSecond;
 
-	public HydrogenSprite() {
+	private float stateTime = 0;
+
+	public HydrogenSprite(int x, int y) {
 
 		velocity = rand.nextFloat() * 2 + 1.5f;
 		ellipseRotation = (float) (rand.nextFloat() * 2 * Math.PI);
@@ -24,9 +31,15 @@ public class HydrogenSprite extends Sprite {
 		height = Gdx.graphics.getWidth() / 40;
 		redBall.setSize(width, height);
 		redBall.setOriginCenter();// (width/2, height/2);
-		redBall.setX((Gdx.graphics.getWidth() - redBall.getWidth()) / 2);
-		redBall.setY((Gdx.graphics.getHeight() - redBall.getHeight()) / 2);
 
+		redBall.setX(x);
+		redBall.setY(y);
+
+		oppositeEndX = Gdx.graphics.getWidth() - x;
+		oppositeEndY = Gdx.graphics.getHeight() - y;
+
+		moveXAmountPerSecond = (oppositeEndX - x) / secondsToCrossScreen;
+		moveYAmountPerSecond = (oppositeEndY - y) / secondsToCrossScreen;
 		blueBall = new BlueBall();
 		width = Gdx.graphics.getWidth() / 80;
 		height = Gdx.graphics.getWidth() / 80;
@@ -48,7 +61,8 @@ public class HydrogenSprite extends Sprite {
 		}
 	}
 
-	public void render(float stateTime) {
+	public void render(float delta) {
+		stateTime += delta;
 		theta = (float) (stateTime * 2 % 2 * Math.PI);
 		updateSpriteXYForEllipse(theta, redBall.getX() + redBall.getOriginX(),
 				redBall.getY() + redBall.getOriginY(), 80, 40, blueBall);
@@ -60,17 +74,27 @@ public class HydrogenSprite extends Sprite {
 		redBall.setRotation(rotation);
 		blueBall.setRotation(rotation);
 
+		moveToOppositeEndOfScreen(delta);
 	}
 
 	// http://www.uwgb.edu/dutchs/Geometry/HTMLCanvas/ObliqueEllipses5.HTM
 	public void updateSpriteXYForEllipse(float theta, float xCenter,
 			float yCenter, float xRadius, float yRadius, Sprite sprite) {
-		float x = (float) (xCenter + ((xRadius * Math.cos(theta)) * Math.cos(ellipseRotation) - yRadius * Math.sin(theta) * Math.sin(ellipseRotation)));
-		float y = (float) (yCenter - ((yRadius * Math.sin(theta)) * Math.cos(ellipseRotation) + xRadius * Math.cos(theta) * Math.sin(ellipseRotation)));
+		float x = (float) (xCenter + ((xRadius * Math.cos(theta))
+				* Math.cos(ellipseRotation) - yRadius * Math.sin(theta)
+				* Math.sin(ellipseRotation)));
+		float y = (float) (yCenter - ((yRadius * Math.sin(theta))
+				* Math.cos(ellipseRotation) + xRadius * Math.cos(theta)
+				* Math.sin(ellipseRotation)));
 		x -= sprite.getWidth() / 2;
 		y -= sprite.getHeight() / 2;
 		sprite.setX(x);
 		sprite.setY(y);
+	}
+
+	public void moveToOppositeEndOfScreen(float delta) {
+		redBall.setX(redBall.getX() + moveXAmountPerSecond * delta);
+		redBall.setY(redBall.getY() + moveYAmountPerSecond * delta);
 	}
 
 	public RedBall getRedBall() {
@@ -120,6 +144,5 @@ public class HydrogenSprite extends Sprite {
 	public void setRand(Random rand) {
 		this.rand = rand;
 	}
-	
-	
+
 }
