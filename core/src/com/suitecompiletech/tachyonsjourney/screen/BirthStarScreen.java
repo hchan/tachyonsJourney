@@ -36,6 +36,10 @@ public class BirthStarScreen extends BaseScreen {
 		hydrogenSprite2.render(delta);
 		hydrogenSprite1.draw(spriteBatch);
 		hydrogenSprite2.draw(spriteBatch);
+		
+		if (hydrogenSprite1.getRedBall().getBoundingRectangle().overlaps(hydrogenSprite2.getRedBall().getBoundingRectangle())) {
+			System.out.println("COLLISION");
+		}
 		spriteBatch.end();
 	}
 	

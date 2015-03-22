@@ -59,6 +59,7 @@ public class HydrogenSprite extends Sprite {
 			redBall.draw(batch);
 			blueBall.draw(batch);
 		}
+		
 	}
 
 	public void render(float delta) {
