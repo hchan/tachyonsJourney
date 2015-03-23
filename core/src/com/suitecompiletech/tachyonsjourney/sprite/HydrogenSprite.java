@@ -15,7 +15,7 @@ public class HydrogenSprite extends SpritePlus {
 	private float ellipseRotation;
 	private int oppositeEndX;
 	private int oppositeEndY;
-	private float secondsToCrossScreen = 8f;
+	private float secondsToCrossScreen = 4f;
 	private float moveXAmountPerSecond;
 	private float moveYAmountPerSecond;
 

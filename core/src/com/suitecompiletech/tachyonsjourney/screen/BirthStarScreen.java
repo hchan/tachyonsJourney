@@ -42,13 +42,18 @@ public class BirthStarScreen extends BaseScreen {
 		
 		if (hydrogenSprite1.getRedBall().getBoundingRectangle().overlaps(hydrogenSprite2.getRedBall().getBoundingRectangle())) {
 			
-
-			effect.setPosition(Gdx.graphics.getWidth() / 2,
-					Gdx.graphics.getHeight() / 2);
-			effect.start();
+			if (effect == null) {
+				effect = TachyonsJourneyGame.assetManager.get("effects/hydrogenCollision.p", ParticleEffect.class);
+				effect.setPosition(hydrogenSprite1.getRedBall().getX(),
+						hydrogenSprite1.getRedBall().getY());
+				effect.start();
+				
+				hydrogenSprite1.setVisible(false);
+				hydrogenSprite2.setVisible(false);
+			}
+		}
+		if (effect != null && !effect.isComplete()) {
 			effect.draw(spriteBatch, delta);
-			hydrogenSprite1.setVisible(false);
-			hydrogenSprite2.setVisible(false);
 		}
 		spriteBatch.end();
 	}
@@ -57,7 +62,7 @@ public class BirthStarScreen extends BaseScreen {
 	@Override
 	public void show() {
 		super.show();
-		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
+		
 	}
 	
 }
