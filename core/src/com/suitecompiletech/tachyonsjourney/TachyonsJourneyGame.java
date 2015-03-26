@@ -31,9 +31,9 @@ public class TachyonsJourneyGame extends Game {
 		
 
 		assetManager.finishLoading();
-//		setScreen(new TitleScreen());
+		setScreen(new TitleScreen());
 //		setScreen(new ExplosionScreen());
-		setScreen(new BirthStarScreen());
+//		setScreen(new BirthStarScreen());
 	}
 
 	@Override

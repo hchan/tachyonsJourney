@@ -44,6 +44,7 @@ public class AssetManagerHelper {
 		TachyonsJourneyGame.assetManager.load("music/Loving Everything I Find.mp3", Music.class);
 		TachyonsJourneyGame.assetManager.load("sound/explosion.mp3", Sound.class);
 		TachyonsJourneyGame.assetManager.load("sound/tachyonScreaming.ogg", Sound.class);
+		TachyonsJourneyGame.assetManager.load("sound/mediumExplosion.ogg", Sound.class);
 		
 		
 		TachyonsJourneyGame.assetManager.load("effects/explosion.p", ParticleEffect.class);

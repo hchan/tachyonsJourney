@@ -1,6 +1,7 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -40,20 +41,28 @@ public class BirthStarScreen extends BaseScreen {
 		hydrogenSprite1.draw(spriteBatch);
 		hydrogenSprite2.draw(spriteBatch);
 		
-		if (hydrogenSprite1.getRedBall().getBoundingRectangle().overlaps(hydrogenSprite2.getRedBall().getBoundingRectangle())) {
+		// collision
+		if (hydrogenSprite1.isVisible() && hydrogenSprite1.getRedBall().getBoundingRectangle().overlaps(hydrogenSprite2.getRedBall().getBoundingRectangle())) {
 			
 			if (effect == null) {
 				effect = TachyonsJourneyGame.assetManager.get("effects/hydrogenCollision.p", ParticleEffect.class);
 				effect.setPosition(hydrogenSprite1.getRedBall().getX(),
 						hydrogenSprite1.getRedBall().getY());
 				effect.start();
-				
+				effect.setDuration(1500);
 				hydrogenSprite1.setVisible(false);
 				hydrogenSprite2.setVisible(false);
+				Sound sound = TachyonsJourneyGame.assetManager.get("sound/mediumExplosion.ogg", Sound.class);
+				sound.play(1, 0.9f, 0f);
 			}
 		}
 		if (effect != null && !effect.isComplete()) {
 			effect.draw(spriteBatch, delta);
+			//effect.update(delta);
+		}
+		if (effect != null && effect.isComplete()) {
+			effect.dispose();
+			effect = null;
 		}
 		spriteBatch.end();
 	}
