@@ -5,8 +5,10 @@ import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.utils.TimeUtils;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.HydrogenSprite;
+import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
 public class BirthStarScreen extends BaseScreen {
@@ -20,14 +22,17 @@ public class BirthStarScreen extends BaseScreen {
 		super.render(delta);
 		Sprite sprite = null;
 
+		long timeSinceMillis = TimeUtils.timeSinceMillis(startTime);
 		// if (TimeUtils.timeSinceMillis(startTime) > 10000) {
 		TextureRegion currentFrame = tachyonWatching.getAnimation()
-				.getKeyFrame(1, true);
+				.getKeyFrame(((int)(timeSinceMillis/1000)) % 4, true);
 		float width = Gdx.graphics.getWidth() / 10;
 		float height = Gdx.graphics.getWidth() / 10;
 		float x = (Gdx.graphics.getWidth() - width) / 8;
 		float y = (Gdx.graphics.getHeight() - 2 * height);
 
+		x += timeSinceMillis/5;
+				
 		sprite = new Sprite(currentFrame);
 		sprite.setX(x);
 		sprite.setY(y);
@@ -71,7 +76,7 @@ public class BirthStarScreen extends BaseScreen {
 	@Override
 	public void show() {
 		super.show();
-		
+		startTime = TimeUtils.millis();
 	}
 	
 }
