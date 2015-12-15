@@ -2,8 +2,12 @@ package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.suitecompiletech.tachyonsjourney.font.FontHelper;
+import com.suitecompiletech.tachyonsjourney.font.FontParam;
 
 public class BaseScreen implements Screen {
 	protected SpriteBatch spriteBatch;
@@ -46,4 +50,26 @@ public class BaseScreen implements Screen {
 		spriteBatch.dispose();
 	}
 
+	private void drawText(String captionText, BitmapFont font, float widthRatio, float heightRatio) {
+		font.draw(spriteBatch, captionText,
+				(Gdx.graphics.getWidth() - font.getBounds(captionText).width) / widthRatio,
+				(font.getBounds(captionText).height) * heightRatio);
+	}
+
+	public void drawText(String captionText, BitmapFont font) {
+		drawText(captionText, font, 2f, 3f);
+	}
+	
+	public BitmapFont getFont(String captionText) {
+		return getFont(captionText, 0.25f);
+	}
+	public BitmapFont getFont(String captionText, float scale) {
+		FontParam fontParam = new FontParam();
+		fontParam.setTtfFileName("fonts/STONB___.TTF");
+		fontParam.setText(captionText);
+		fontParam.setColor(Color.YELLOW);
+		BitmapFont font = FontHelper.getTTF(fontParam);
+		font.setScale(scale);
+		return font;
+	}
 }

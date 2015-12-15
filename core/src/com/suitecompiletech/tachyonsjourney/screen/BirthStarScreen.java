@@ -2,13 +2,13 @@ package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.HydrogenSprite;
-import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
 public class BirthStarScreen extends BaseScreen {
@@ -16,6 +16,8 @@ public class BirthStarScreen extends BaseScreen {
 	private HydrogenSprite hydrogenSprite1 = new HydrogenSprite(0,0);
 	private HydrogenSprite hydrogenSprite2 = new HydrogenSprite(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight());
 	private ParticleEffect effect;
+	private BitmapFont font;
+	public static String CAPTION_TEXT = "Cosmic Inflation has begun";
 	
 	@Override
 	public void render(float delta) {
@@ -32,6 +34,7 @@ public class BirthStarScreen extends BaseScreen {
 		float y = (Gdx.graphics.getHeight() - 2 * height);
 
 		x += timeSinceMillis/5;
+		y -= timeSinceMillis/20;
 				
 		sprite = new Sprite(currentFrame);
 		sprite.setX(x);
@@ -45,7 +48,7 @@ public class BirthStarScreen extends BaseScreen {
 		hydrogenSprite2.render(delta);
 		hydrogenSprite1.draw(spriteBatch);
 		hydrogenSprite2.draw(spriteBatch);
-		
+		drawText(CAPTION_TEXT, font);
 		// collision
 		if (hydrogenSprite1.isVisible() && hydrogenSprite1.getRedBall().getBoundingRectangle().overlaps(hydrogenSprite2.getRedBall().getBoundingRectangle())) {
 			
@@ -59,6 +62,7 @@ public class BirthStarScreen extends BaseScreen {
 				hydrogenSprite2.setVisible(false);
 				Sound sound = TachyonsJourneyGame.assetManager.get("sound/mediumExplosion.ogg", Sound.class);
 				sound.play(1, 0.9f, 0f);
+				
 			}
 		}
 		if (effect != null && !effect.isComplete()) {
@@ -77,6 +81,7 @@ public class BirthStarScreen extends BaseScreen {
 	public void show() {
 		super.show();
 		startTime = TimeUtils.millis();
+		font = getFont(CAPTION_TEXT, 0.5f);
 	}
 	
 }

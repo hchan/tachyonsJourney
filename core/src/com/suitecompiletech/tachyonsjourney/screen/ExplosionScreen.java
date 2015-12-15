@@ -39,9 +39,7 @@ public class ExplosionScreen extends BaseScreen {
 
 	
 		if (TimeUtils.timeSinceMillis(startTime) > 1500) {
-			font.draw(spriteBatch, CAPTION_TEXT,
-					(Gdx.graphics.getWidth() - font.getBounds(CAPTION_TEXT).width) / 2,
-					(font.getBounds(CAPTION_TEXT).height) * 3);
+			drawText(CAPTION_TEXT, font);
 		}
 
 		if (TimeUtils.timeSinceMillis(startTime) > 5000
@@ -84,6 +82,7 @@ public class ExplosionScreen extends BaseScreen {
 		spriteBatch.end();
 	}
 
+	
 	@Override
 	public void resize(int width, int height) {
 	}
@@ -97,13 +96,8 @@ public class ExplosionScreen extends BaseScreen {
 		tachyonScreaming = new TachyonScreaming();
 		Sound sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
+		font = getFont(CAPTION_TEXT);
 		
-		FontParam fontParam = new FontParam();
-		fontParam.setTtfFileName("fonts/STONB___.TTF");
-		fontParam.setText(CAPTION_TEXT);
-		fontParam.setColor(Color.YELLOW);
-		font = FontHelper.getTTF(fontParam);
-		font.setScale(0.25f);
 		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
 
 		effect.setPosition(Gdx.graphics.getWidth() / 2,
@@ -111,6 +105,7 @@ public class ExplosionScreen extends BaseScreen {
 		effect.start();
 	}
 
+	
 
 	@Override
 	public void pause() {
