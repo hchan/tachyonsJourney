@@ -13,8 +13,9 @@ import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGeneratorLoader;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
-import com.suitecompiletech.tachyonsjourney.screen.BirthStarScreen;
-import com.suitecompiletech.tachyonsjourney.screen.ExplosionScreen;
+import com.suitecompiletech.tachyonsjourney.screen.CosmicInflationScreen;
+import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
+import com.suitecompiletech.tachyonsjourney.screen.JourneyAcrossTimeScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 
 public class TachyonsJourneyGame extends Game {
@@ -31,9 +32,8 @@ public class TachyonsJourneyGame extends Game {
 		
 
 		assetManager.finishLoading();
-		setScreen(new TitleScreen());
-//		setScreen(new ExplosionScreen());
-//		setScreen(new BirthStarScreen());
+		//setScreen(new TitleScreen());
+		setScreen(new JourneyAcrossTimeScreen());
 	}
 
 	@Override

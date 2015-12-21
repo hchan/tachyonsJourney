@@ -12,7 +12,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGeneratorLoader;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.suitecompiletech.tachyonsjourney.font.FontHelper;
 import com.suitecompiletech.tachyonsjourney.font.FontParam;
-import com.suitecompiletech.tachyonsjourney.screen.ExplosionScreen;
+import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 
 public class AssetManagerHelper {
@@ -36,7 +36,7 @@ public class AssetManagerHelper {
 		
 		fontParam = new FontParam();
 		fontParam.setTtfFileName("fonts/STONB___.TTF");
-		fontParam.setText(ExplosionScreen.CAPTION_TEXT);
+		fontParam.setText(BigBangScreen.CAPTION_TEXT);
 		fontParam.setColor(Color.YELLOW);
 		FontHelper.getTTF(fontParam);
 		
@@ -49,5 +49,6 @@ public class AssetManagerHelper {
 		
 		TachyonsJourneyGame.assetManager.load("effects/explosion.p", ParticleEffect.class);
 		TachyonsJourneyGame.assetManager.load("effects/hydrogenCollision.p", ParticleEffect.class);
+		TachyonsJourneyGame.assetManager.load("effects/stars.p", ParticleEffect.class);
 	}
 }

@@ -59,7 +59,7 @@ public class TitleScreen extends BaseScreen {
 			shrinkFont = true;
 			return;
 		} else if (shrinkFont && curFontScale <= initalFontScale) {
-			TachyonsJourneyGame.game.doNewScreen(new ExplosionScreen(), this);
+			TachyonsJourneyGame.game.doNewScreen(new BigBangScreen(), this);
 		}
 		
 		

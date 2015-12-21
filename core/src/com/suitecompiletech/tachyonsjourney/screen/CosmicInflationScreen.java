@@ -11,7 +11,7 @@ import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.HydrogenSprite;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
-public class JourneyThroughScreen extends BaseScreen {
+public class CosmicInflationScreen extends BaseScreen {
 	private TachyonWatching tachyonWatching = new TachyonWatching();
 	private HydrogenSprite hydrogenSprite1 = new HydrogenSprite(0,0);
 	private HydrogenSprite hydrogenSprite2 = new HydrogenSprite(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight());

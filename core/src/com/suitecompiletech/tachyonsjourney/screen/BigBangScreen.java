@@ -21,7 +21,7 @@ import com.suitecompiletech.tachyonsjourney.font.FontParam;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
-public class ExplosionScreen extends BaseScreen {
+public class BigBangScreen extends BaseScreen {
 	public static final String CAPTION_TEXT = "THE BIG BANG";
 	private ParticleEffect effect;
 	private BitmapFont font;
@@ -76,7 +76,7 @@ public class ExplosionScreen extends BaseScreen {
 		}
 		
 		if (sprite != null && sprite.getHeight() >= Gdx.graphics.getHeight() * 0.9f) {
-			TachyonsJourneyGame.game.doNewScreen(new BirthStarScreen(), this);
+			TachyonsJourneyGame.game.doNewScreen(new CosmicInflationScreen(), this);
 		}
 		// Gdx.app.log(ExplosionScreen.class.getSimpleName(), delta + "");
 		spriteBatch.end();
