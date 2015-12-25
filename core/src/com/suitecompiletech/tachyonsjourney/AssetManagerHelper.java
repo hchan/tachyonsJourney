@@ -10,6 +10,8 @@ import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGeneratorLoader;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
+import com.badlogic.gdx.graphics.g3d.Model;
+import com.badlogic.gdx.graphics.g3d.ModelInstance;
 import com.suitecompiletech.tachyonsjourney.font.FontHelper;
 import com.suitecompiletech.tachyonsjourney.font.FontParam;
 import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
@@ -50,5 +52,7 @@ public class AssetManagerHelper {
 		TachyonsJourneyGame.assetManager.load("effects/explosion.p", ParticleEffect.class);
 		TachyonsJourneyGame.assetManager.load("effects/hydrogenCollision.p", ParticleEffect.class);
 		TachyonsJourneyGame.assetManager.load("effects/stars.p", ParticleEffect.class);
+		
+		TachyonsJourneyGame.assetManager.load("blender/sphere.g3dj", Model.class);
 	}
 }

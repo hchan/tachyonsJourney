@@ -17,15 +17,36 @@ public class JourneyAcrossTimeScreen extends BaseScreen {
 	
 	private ParticleEffect effect;
 	private BitmapFont font;
-	public static String CAPTION_TEXT = "As you journey across time";
+	public static String CAPTION_TEXT = "Journey across time";
+	private TachyonWatching tachyonWatching = new TachyonWatching();
+	
 	
 	@Override
 	public void render(float delta) {
 		super.render(delta);
+		Sprite sprite = null;
+
+		long timeSinceMillis = TimeUtils.timeSinceMillis(startTime);
+		TextureRegion currentFrame = tachyonWatching.getAnimation()
+				.getKeyFrame(((int)(timeSinceMillis/1000)) % 4, true);
+		float width = Gdx.graphics.getWidth() / 10;
+		float height = Gdx.graphics.getWidth() / 10;
+		float x = (Gdx.graphics.getWidth() - width) / 8;
+		float y = (Gdx.graphics.getHeight() - 2 * height);
+
+		x += timeSinceMillis/5;
+		y -= timeSinceMillis/20;
+				
+		sprite = new Sprite(currentFrame);
+		sprite.setX(x);
+		sprite.setY(y);
+		sprite.setSize(width, height);
+		// sprite.setRotation(90f * multiplier);
+		sprite.setOrigin(width / 2, height / 2);
 		spriteBatch.begin();
+		sprite.draw(spriteBatch);
 		effect.draw(spriteBatch, delta);
 		drawText(CAPTION_TEXT, font);
-		
 		spriteBatch.end();
 	}
 	
