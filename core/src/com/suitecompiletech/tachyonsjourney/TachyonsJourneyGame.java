@@ -1,21 +1,8 @@
 package com.suitecompiletech.tachyonsjourney;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.assets.loaders.FileHandleResolver;
-import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.ParticleEffect;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGeneratorLoader;
-import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
-import com.suitecompiletech.tachyonsjourney.screen.CosmicInflationScreen;
-import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
-import com.suitecompiletech.tachyonsjourney.screen.JourneyAcrossTimeScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 
 public class TachyonsJourneyGame extends Game {
@@ -27,13 +14,9 @@ public class TachyonsJourneyGame extends Game {
 	public void create() {
 		game = this;
 		AssetManagerHelper.loadAssets();
-		
-
-		
-
 		assetManager.finishLoading();
 		setScreen(new TitleScreen());
-		//setScreen(new JourneyAcrossTimeScreen());
+		//setScreen(new SpaceScreen());
 	}
 
 	@Override

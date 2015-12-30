@@ -47,6 +47,9 @@ public class JourneyAcrossTimeScreen extends BaseScreen {
 		sprite.draw(spriteBatch);
 		effect.draw(spriteBatch, delta);
 		drawText(CAPTION_TEXT, font);
+		if (sprite != null && sprite.getX() >= Gdx.graphics.getWidth()) {
+			TachyonsJourneyGame.game.doNewScreen(new SpaceScreen(), this);
+		}
 		spriteBatch.end();
 	}
 	
