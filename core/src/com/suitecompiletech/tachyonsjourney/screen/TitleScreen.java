@@ -12,7 +12,7 @@ import com.suitecompiletech.tachyonsjourney.font.FontParam;
 
 public class TitleScreen extends BaseScreen {
 
-	public static final String CAPTION_TEXT = "Tachyon's Journey";
+	public static final String CAPTION_TEXT = "Tachyon's Journey2";
 	private BitmapFont font;
 	private boolean shrinkFont = false;
 	private float initalFontScale = 0.1f;

@@ -1,5 +1,6 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
+import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -80,9 +81,9 @@ public class BaseScreen implements Screen {
 	public void log(String str) {
 		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_INFO);
 		Gdx.app.log("MyTag", str);
-		if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
-			console(str);
-		}
+		Gdx.app.log("MyTag", Gdx.app.getClass().getName());
+			//console(str);
+		
 	}
 	
 	public static native void console(String text)
