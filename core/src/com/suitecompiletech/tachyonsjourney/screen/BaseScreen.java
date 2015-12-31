@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.suitecompiletech.tachyonsjourney.font.FontHelper;
 import com.suitecompiletech.tachyonsjourney.font.FontParam;
@@ -13,6 +14,7 @@ public class BaseScreen implements Screen {
 	protected SpriteBatch spriteBatch;
 	protected float stateTime;
 	protected long startTime = 0;
+	protected GlyphLayout glyphLayout = new GlyphLayout();
 	
 	@Override
 	public void show() {
@@ -51,9 +53,10 @@ public class BaseScreen implements Screen {
 	}
 
 	private void drawText(String captionText, BitmapFont font, float widthRatio, float heightRatio) {
+		glyphLayout.setText(font, captionText);
 		font.draw(spriteBatch, captionText,
-				(Gdx.graphics.getWidth() - font.getBounds(captionText).width) / widthRatio,
-				(font.getBounds(captionText).height) * heightRatio);
+				(Gdx.graphics.getWidth() - glyphLayout.width) / widthRatio,
+				(glyphLayout.height) * heightRatio);
 	}
 
 	public void drawText(String captionText, BitmapFont font) {
@@ -69,7 +72,7 @@ public class BaseScreen implements Screen {
 		fontParam.setText(captionText);
 		fontParam.setColor(Color.YELLOW);
 		BitmapFont font = FontHelper.getTTF(fontParam);
-		font.setScale(scale);
+		font.getData().setScale(scale);
 		return font;
 	}
 }
