@@ -1,5 +1,6 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
@@ -75,4 +76,17 @@ public class BaseScreen implements Screen {
 		font.getData().setScale(scale);
 		return font;
 	}
+	
+	public void log(String str) {
+		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_INFO);
+		Gdx.app.log("MyTag", str);
+		if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
+			console(str);
+		}
+	}
+	
+	public static native void console(String text)
+	/*-{
+	    console.log(text);
+	}-*/;
 }
