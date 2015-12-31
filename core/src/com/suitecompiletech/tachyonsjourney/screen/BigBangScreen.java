@@ -74,7 +74,11 @@ public class BigBangScreen extends BaseScreen {
 			Sound sound = TachyonsJourneyGame.assetManager.get("sound/tachyonScreaming.ogg", Sound.class);
 			sound.play(1, 0.9f, 0f);
 		}
-		
+		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_INFO);
+		if (sprite != null) {
+			Gdx.app.log("MyTag", "sprite.getHeight():" + sprite.getHeight());
+		}
+		Gdx.app.log("MyTag", "Gdx.graphics.getHeight():" + Gdx.graphics.getHeight());
 		if (sprite != null && sprite.getHeight() >= Gdx.graphics.getHeight() * 0.9f) {
 			TachyonsJourneyGame.game.doNewScreen(new CosmicInflationScreen(), this);
 		}
