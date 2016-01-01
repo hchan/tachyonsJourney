@@ -16,7 +16,7 @@ public class TachyonsJourneyGame extends Game {
 	public void create() {
 		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_DEBUG);
 		game = this;
-		GameUtil.log("About to loadAssets");
+		GameUtil.log("About to loadAssets from TachyonsJourneyGame");
 		AssetManagerHelper.loadAssets();
 		assetManager.finishLoading();
 	
