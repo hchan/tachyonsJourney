@@ -96,18 +96,21 @@ public class BigBangScreen extends BaseScreen {
 	@Override
 	public void show() {
 		super.show();
+		GameUtil.log("BigBangScreen show1");
 		startTime = TimeUtils.millis();
 		tachyonScreaming = new TachyonScreaming();
 		Sound sound = null;
 		sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
+		GameUtil.log("BigBangScreen show2");
 		font = getFont(CAPTION_TEXT);
-		
+		GameUtil.log("BigBangScreen show3");
 		effect = TachyonsJourneyGame.assetManager.get("effects/explosion.p", ParticleEffect.class);
-
+		GameUtil.log("BigBangScreen show4");
 		effect.setPosition(Gdx.graphics.getWidth() / 2,
 				Gdx.graphics.getHeight() / 2);
 		effect.start();
+		GameUtil.log("BigBangScreen show5");
 	}
 
 	
