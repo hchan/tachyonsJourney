@@ -9,7 +9,7 @@ public class AssetManagerPlus extends AssetManager {
 		try {
 			return super.get(fileName, type);
 		} catch (Exception e) {
-			while (!isLoaded(fileName)) {
+			if (!isLoaded(fileName)) {
 				this.load(fileName, type);
 				GameUtil.log("still loading " + fileName);
 			}
