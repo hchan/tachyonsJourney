@@ -1,6 +1,8 @@
 package com.suitecompiletech.tachyonsjourney;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Sound;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class AssetManagerPlus extends AssetManager {
@@ -10,10 +12,13 @@ public class AssetManagerPlus extends AssetManager {
 			return super.get(fileName, type);
 		} catch (Exception e) {
 			if (!isLoaded(fileName)) {
-				this.load(fileName, type);
-				GameUtil.log("still loading " + fileName);
+				if (type.equals(Sound.class)) {
+					return (T) Gdx.audio.newSound(Gdx.files.internal(fileName));
+				}
+			} else {
+				return super.get(fileName, type);
 			}
-			return super.get(fileName, type);
 		}
+		return null;
 	}
 }
