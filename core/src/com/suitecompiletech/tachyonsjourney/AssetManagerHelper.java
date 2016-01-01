@@ -16,6 +16,7 @@ import com.suitecompiletech.tachyonsjourney.font.FontHelper;
 import com.suitecompiletech.tachyonsjourney.font.FontParam;
 import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
+import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class AssetManagerHelper {
 	
@@ -43,7 +44,7 @@ public class AssetManagerHelper {
 		fontParam.setColor(Color.YELLOW);
 		FontHelper.getTTF(fontParam);
 		
-		
+		GameUtil.log("Inside loadAssets");
 		TachyonsJourneyGame.assetManager.load("music/Loving Everything I Find.mp3", Music.class);
 		TachyonsJourneyGame.assetManager.load("sound/explosion.mp3", Sound.class);
 		TachyonsJourneyGame.assetManager.load("sound/tachyonScreaming.ogg", Sound.class);
@@ -55,5 +56,6 @@ public class AssetManagerHelper {
 		TachyonsJourneyGame.assetManager.load("effects/stars.p", ParticleEffect.class);
 		
 		TachyonsJourneyGame.assetManager.load("blender/sphere.g3dj", Model.class);
+		GameUtil.log("leaving loadAssets");
 	}
 }

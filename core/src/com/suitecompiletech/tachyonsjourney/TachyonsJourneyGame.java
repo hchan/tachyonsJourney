@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
+import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class TachyonsJourneyGame extends Game {
 	public static AssetManagerPlus assetManager = new AssetManagerPlus();
@@ -15,6 +16,7 @@ public class TachyonsJourneyGame extends Game {
 	public void create() {
 		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_DEBUG);
 		game = this;
+		GameUtil.log("About to loadAssets");
 		AssetManagerHelper.loadAssets();
 		assetManager.finishLoading();
 	
