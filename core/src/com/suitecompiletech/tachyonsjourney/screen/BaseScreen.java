@@ -83,8 +83,9 @@ public class BaseScreen implements Screen {
 		Gdx.app.log("MyTag", str);
 		Gdx.app.log("MyTag", Gdx.app.getClass().getName());
 		Gdx.app.log("MyTag", Gdx.app.getType().name());
+		if (Gdx.app.getType() != ApplicationType.Desktop) {
 			console(str);
-		
+		}
 	}
 	
 	public static native void console(String text)
