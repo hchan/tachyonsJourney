@@ -10,6 +10,7 @@ public class AssetManagerPlus extends AssetManager {
 			return super.get(fileName, type);
 		} catch (Exception e) {
 			while (!isLoaded(fileName)) {
+				this.load(fileName, type);
 				GameUtil.log("still loading " + fileName);
 			}
 			return super.get(fileName, type);
