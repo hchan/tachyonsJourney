@@ -32,9 +32,6 @@ import com.suitecompiletech.tachyonsjourney.util.GameUtil;
  *
  */
 public class AssetManagerFontLoading {
-	public static void loadAssets2() {
-		
-	}
 	public static void loadAssets() {
 		// set the loaders for the generator and the fonts themselves
 		FileHandleResolver resolver = new InternalFileHandleResolver();

@@ -47,7 +47,12 @@ public class FontHelper {
 			retval = cache.get(fontParam);
 		}
 		if (retval == null) {
-			retval = new BitmapFont();
+			// default font
+			// note that GWT CANNOT load a TrueTypeFont (.ttf) file
+			// to convert a .ttf -> .fnt file
+			// goto: http://kvazars.com/littera/
+			retval = new BitmapFont(Gdx.files.internal("fonts/StoneyBilly.fnt"));
+			retval.setColor(Color.YELLOW);
 		}
 		return retval;
 	}

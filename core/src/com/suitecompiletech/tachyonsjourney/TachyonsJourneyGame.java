@@ -1,5 +1,6 @@
 package com.suitecompiletech.tachyonsjourney;
 
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -17,7 +18,9 @@ public class TachyonsJourneyGame extends Game {
 		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_DEBUG);
 		game = this;
 		GameUtil.log("About to loadAssets from TachyonsJourneyGame");
-		AssetManagerFontLoading.loadAssets();
+		if (!Gdx.app.getType().equals(ApplicationType.WebGL)) {
+			AssetManagerFontLoading.loadAssets();
+		}
 		AssetManagerHelper.loadAssets();
 		GameUtil.log("finishLoading");
 		assetManager.finishLoading();
