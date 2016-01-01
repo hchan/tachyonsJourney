@@ -21,7 +21,7 @@ public class GameUtil {
 		Gdx.app.log("MyTag", str);
 		Gdx.app.log("MyTag", Gdx.app.getClass().getName());
 		Gdx.app.log("MyTag", Gdx.app.getType().name());
-		if (Gdx.app.getType() != ApplicationType.Desktop) {
+		if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
 			console(str);
 		}
 	}

@@ -18,6 +18,7 @@ import com.suitecompiletech.tachyonsjourney.screen.BigBangScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 
 public class AssetManagerHelper {
+	
 	public static void loadAssets() {
 		// set the loaders for the generator and the fonts themselves
 		FileHandleResolver resolver = new InternalFileHandleResolver();

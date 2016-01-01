@@ -17,6 +17,7 @@ public class AssetManagerPlus extends AssetManager {
 		try {
 			return super.get(fileName, type);
 		} catch (Exception e) {
+			GameUtil.log("can't load: " + fileName);
 			if (!isLoaded(fileName)) {
 				if (type.equals(Sound.class)) {
 					return (T) Gdx.audio.newSound(Gdx.files.internal(fileName));

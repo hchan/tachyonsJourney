@@ -22,7 +22,7 @@ import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class BigBangScreen extends BaseScreen {
-	public static final String CAPTION_TEXT = "2THE BIG BANG2";
+	public static final String CAPTION_TEXT = "THE BIG BANG";
 	private ParticleEffect effect;
 	private BitmapFont font;
 	private float stateTime;
@@ -33,15 +33,16 @@ public class BigBangScreen extends BaseScreen {
 	@Override
 	public void render(float delta) {
 		super.render(delta);
-		
+		GameUtil.log("in here 0");
 		spriteBatch.begin();
 		effect.draw(spriteBatch, delta);
 
 	
 		if (TimeUtils.timeSinceMillis(startTime) > 1500) {
+			GameUtil.log("in here 1");
 			drawText(CAPTION_TEXT, font);
 		}
-
+		GameUtil.log("in here 2");
 		if (TimeUtils.timeSinceMillis(startTime) > 5000
 				&& GameUtil.startEventOnce("hasMusicStarted")) {
 			
