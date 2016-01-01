@@ -12,7 +12,11 @@ b:effects/hydrogenCollision.p:2017:application/unknown
 i:effects/particle.png:1821:image/png
 b:effects/stars.p:3185:application/unknown
 d:fonts:0:application/unknown
+t:fonts/arial-15.fnt:18020:application/unknown
+i:fonts/arial-15_00.png:13326:image/png
 b:fonts/STONB___.TTF:29256:application/unknown
+t:fonts/StoneyBilly.fnt:7487:application/unknown
+i:fonts/StoneyBilly.png:193018:image/png
 b:fonts/Tangerine_Bold.ttf:66492:application/unknown
 b:fonts/Tangerine_Regular.ttf:61484:application/unknown
 d:img:0:application/unknown
