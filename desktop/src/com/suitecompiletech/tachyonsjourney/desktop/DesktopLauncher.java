@@ -21,7 +21,7 @@ public class DesktopLauncher {
 			config.width = 1024;
 			config.height = 768;
 			config.fullscreen = false;
-			config.title = "Tachyon's Journey";
+			config.title = "Tachyon's Journey abc";
 			// image not working on Linux yet ... file has to be 512x512
 			// config.addIcon("img/icon.png", FileType.Internal); 
 			
