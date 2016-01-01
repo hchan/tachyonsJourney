@@ -11,6 +11,10 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 
+/*
+ * Note the impl for this under the html project is different (damn GWT! - it doesn't support TTF)
+ * FYI, to convert .ttf to .fnt, use http://kvazars.com/littera/
+ */
 public class FontHelper {
 
 	public static HashMap<FontParam, BitmapFont> cache = new HashMap<FontParam, BitmapFont>();
