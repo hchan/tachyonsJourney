@@ -79,7 +79,6 @@ public class BaseScreen implements Screen {
 	}
 	
 	public void log(String str) {
-		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_INFO);
 		Gdx.app.log("MyTag", str);
 		Gdx.app.log("MyTag", Gdx.app.getClass().getName());
 		Gdx.app.log("MyTag", Gdx.app.getType().name());

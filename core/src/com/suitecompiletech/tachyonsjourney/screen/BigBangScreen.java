@@ -1,6 +1,5 @@
 package com.suitecompiletech.tachyonsjourney.screen;
 
-import com.badlogic.gdx.Audio;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
@@ -99,12 +98,7 @@ public class BigBangScreen extends BaseScreen {
 		startTime = TimeUtils.millis();
 		tachyonScreaming = new TachyonScreaming();
 		Sound sound = null;
-		try {
-			sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
-		} catch (Exception e) {
-			log("couldn't find sound");
-			sound = Gdx.audio.newSound(Gdx.files.internal("sound/explosion.mp3"));
-		}
+		sound = TachyonsJourneyGame.assetManager.get("sound/explosion.mp3", Sound.class);
 		sound.play();
 		font = getFont(CAPTION_TEXT);
 		

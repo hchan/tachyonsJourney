@@ -1,6 +1,7 @@
 package com.suitecompiletech.tachyonsjourney;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
@@ -12,9 +13,16 @@ public class TachyonsJourneyGame extends Game {
 
 	@Override
 	public void create() {
+		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_DEBUG);
 		game = this;
 		AssetManagerHelper.loadAssets();
 		assetManager.finishLoading();
+		try {
+			Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		setScreen(new TitleScreen());
 		//setScreen(new SpaceScreen());
 	}
