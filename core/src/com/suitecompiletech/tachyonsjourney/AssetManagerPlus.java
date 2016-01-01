@@ -24,11 +24,12 @@ public class AssetManagerPlus extends AssetManager {
 					return (T) Gdx.audio.newMusic(Gdx.files.internal(fileName));
 				} else if (type.equals(ParticleEffect.class)) {
 					ParticleEffect particleEffect = new ParticleEffect();
-					particleEffect.load(Gdx.files.internal(fileName), Gdx.files.internal(""));
+					particleEffect.load(Gdx.files.internal(fileName),
+							Gdx.files.internal("effects"));
 					return (T) particleEffect;
 				} else if (type.equals(Model.class)) {
-					  ModelLoader loader = new ObjLoader();
-					  return (T) loader.loadModel(Gdx.files.internal(fileName));
+					ModelLoader loader = new ObjLoader();
+					return (T) loader.loadModel(Gdx.files.internal(fileName));
 				}
 			} else {
 				return super.get(fileName, type);
