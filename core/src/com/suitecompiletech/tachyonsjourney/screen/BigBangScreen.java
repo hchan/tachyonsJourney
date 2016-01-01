@@ -32,14 +32,14 @@ public class BigBangScreen extends BaseScreen {
 	
 	@Override
 	public void render(float delta) {
+		GameUtil.log("BigBangScreen render1");
 		super.render(delta);
-		GameUtil.log("in here 0");
+		GameUtil.log("BigBangScreen render2");
 		spriteBatch.begin();
 		effect.draw(spriteBatch, delta);
 
 	
 		if (TimeUtils.timeSinceMillis(startTime) > 1500) {
-			GameUtil.log("in here 1");
 			drawText(CAPTION_TEXT, font);
 		}
 		GameUtil.log("in here 2");
