@@ -1,1 +1,0 @@
-c:\fbx-conv\fbx-conv-win32.exe -f -o G3DJ sphere.fbx sphere.g3dj
