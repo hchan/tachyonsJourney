@@ -69,7 +69,7 @@ public class BigBangScreen extends BaseScreen {
 			sprite.setOrigin(width/2, height/2);
 			sprite.draw(spriteBatch);
 			if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
-				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.001;
+				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.0001;
 			} else {
 				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
 			}
