@@ -22,7 +22,7 @@ import com.suitecompiletech.tachyonsjourney.sprite.TachyonScreaming;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class BigBangScreen extends BaseScreen {
-	public static final String CAPTION_TEXT = "THE BIG BANG";
+	public static final String CAPTION_TEXT = "THE BIG BANG2";
 	private ParticleEffect effect;
 	private BitmapFont font;
 	private float stateTime;
