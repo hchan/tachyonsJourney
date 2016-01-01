@@ -17,12 +17,7 @@ public class TachyonsJourneyGame extends Game {
 		game = this;
 		AssetManagerHelper.loadAssets();
 		assetManager.finishLoading();
-		try {
-			Thread.sleep(15000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		setScreen(new TitleScreen());
 		//setScreen(new SpaceScreen());
 	}
