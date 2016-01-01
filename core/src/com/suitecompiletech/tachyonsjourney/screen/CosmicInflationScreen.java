@@ -74,10 +74,10 @@ public class CosmicInflationScreen extends BaseScreen {
 			effect = null;
 		}
 
+		spriteBatch.end();
 		if (sprite != null && sprite.getX() >= Gdx.graphics.getWidth()) {
 			TachyonsJourneyGame.game.doNewScreen(new JourneyAcrossTimeScreen(), this);
 		}
-		spriteBatch.end();
 	}
 	
 	

@@ -80,10 +80,10 @@ public class BigBangScreen extends BaseScreen {
 			GameUtil.log("sprite.getHeight():" + sprite.getHeight());
 		}
 		GameUtil.log("Gdx.graphics.getHeight():" + Gdx.graphics.getHeight());
+		spriteBatch.end();
 		if (sprite != null && sprite.getHeight() >= Gdx.graphics.getHeight() * 0.9f) {
 			TachyonsJourneyGame.game.doNewScreen(new CosmicInflationScreen(), this);
 		}
-		spriteBatch.end();
 	}
 
 	
