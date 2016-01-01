@@ -18,6 +18,7 @@ public class TachyonsJourneyGame extends Game {
 		game = this;
 		GameUtil.log("About to loadAssets from TachyonsJourneyGame");
 		AssetManagerHelper.loadAssets();
+		GameUtil.log("finishLoading");
 		assetManager.finishLoading();
 	
 		setScreen(new TitleScreen());
@@ -26,6 +27,7 @@ public class TachyonsJourneyGame extends Game {
 
 	@Override
 	public void render() {
+		assetManager.finishLoading();
 		if (disposeScreen != null) {
 			try {
 				disposeScreen.dispose();
