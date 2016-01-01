@@ -78,17 +78,5 @@ public class BaseScreen implements Screen {
 		return font;
 	}
 	
-	public void log(String str) {
-		Gdx.app.log("MyTag", str);
-		Gdx.app.log("MyTag", Gdx.app.getClass().getName());
-		Gdx.app.log("MyTag", Gdx.app.getType().name());
-		if (Gdx.app.getType() != ApplicationType.Desktop) {
-			console(str);
-		}
-	}
 	
-	public static native void console(String text)
-	/*-{
-	    console.log(text);
-	}-*/;
 }

@@ -7,7 +7,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 
 public class TachyonsJourneyGame extends Game {
-	public static AssetManager assetManager = new AssetManager();
+	public static AssetManagerPlus assetManager = new AssetManagerPlus();
 	public static TachyonsJourneyGame game;
 	public static Screen disposeScreen;
 
