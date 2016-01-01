@@ -62,12 +62,7 @@ public class TitleScreen extends BaseScreen {
 
 		font.getData().setScale(curFontScale);
 		
-		if (curFontScale >= 1) {
-			shrinkFont = true;
-			return;
-		} else if (shrinkFont && curFontScale <= initalFontScale) {
-			TachyonsJourneyGame.game.doNewScreen(new BigBangScreen(), this);
-		}
+		
 
 		
 		
@@ -79,6 +74,12 @@ public class TitleScreen extends BaseScreen {
 				(Gdx.graphics.getHeight()) / 2);
 
 		spriteBatch.end();
+		if (curFontScale >= 1) {
+			shrinkFont = true;
+			return;
+		} else if (shrinkFont && curFontScale <= initalFontScale) {
+			TachyonsJourneyGame.game.doNewScreen(new BigBangScreen(), this);
+		}
 
 	}
 
