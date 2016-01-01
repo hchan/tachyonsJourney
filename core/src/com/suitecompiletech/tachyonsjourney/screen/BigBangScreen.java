@@ -2,6 +2,7 @@ package com.suitecompiletech.tachyonsjourney.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
@@ -67,7 +68,11 @@ public class BigBangScreen extends BaseScreen {
 			sprite.setRotation(90f * multiplier);
 			sprite.setOrigin(width/2, height/2);
 			sprite.draw(spriteBatch);
-			multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
+			if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
+				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.001;
+			} else {
+				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
+			}
 
 		}
 		if (TimeUtils.timeSinceMillis(startTime) > 10000
