@@ -8,7 +8,7 @@ import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
 public class TachyonsJourneyGame extends Game {
-	public static AssetManagerPlus assetManager = new AssetManagerPlus();
+	public static AssetManager assetManager = new AssetManager();
 	public static TachyonsJourneyGame game;
 	public static Screen disposeScreen;
 
@@ -17,6 +17,7 @@ public class TachyonsJourneyGame extends Game {
 		Gdx.app.setLogLevel( com.badlogic.gdx.Application.LOG_DEBUG);
 		game = this;
 		GameUtil.log("About to loadAssets from TachyonsJourneyGame");
+		AssetManagerFontLoading.loadAssets();
 		AssetManagerHelper.loadAssets();
 		GameUtil.log("finishLoading");
 		assetManager.finishLoading();

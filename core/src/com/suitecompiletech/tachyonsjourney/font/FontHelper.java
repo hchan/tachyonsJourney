@@ -18,33 +18,37 @@ public class FontHelper {
 	public static BitmapFont getTTF(FontParam fontParam) {
 		BitmapFont retval = null;
 		if (cache.get(fontParam) == null) {
-			FreeTypeFontGenerator freeTypeFontGenerator = TachyonsJourneyGame.assetManager
-					.get(fontParam.getTtfFileName(),
-							FreeTypeFontGenerator.class);
-			FreeTypeFontParameter parameter = new FreeTypeFontParameter();
-			boolean isTextWidthScreenSize = false;
-			int fontSize = 16;
-			GlyphLayout glyphLayout = new GlyphLayout();
-			while (!isTextWidthScreenSize) {
+			try {
+				FreeTypeFontGenerator freeTypeFontGenerator = TachyonsJourneyGame.assetManager
+						.get(fontParam.getTtfFileName(),
+								FreeTypeFontGenerator.class);
+				FreeTypeFontParameter parameter = new FreeTypeFontParameter();
+				boolean isTextWidthScreenSize = false;
+				int fontSize = 16;
+				GlyphLayout glyphLayout = new GlyphLayout();
+				while (!isTextWidthScreenSize) {
 
-				parameter.size = fontSize;
-				parameter.color = fontParam.getColor();
-				retval = freeTypeFontGenerator.generateFont(parameter);
-				glyphLayout.setText(retval, fontParam.getText());
+					parameter.size = fontSize;
+					parameter.color = fontParam.getColor();
+					retval = freeTypeFontGenerator.generateFont(parameter);
+					glyphLayout.setText(retval, fontParam.getText());
 
-				if (glyphLayout.width > Gdx.graphics
-						.getWidth()) {
-					isTextWidthScreenSize = true;
-				} else {
-					retval.dispose();
-					fontSize *= 2;
+					if (glyphLayout.width > Gdx.graphics.getWidth()) {
+						isTextWidthScreenSize = true;
+					} else {
+						retval.dispose();
+						fontSize *= 2;
+					}
 				}
+				cache.put(fontParam, retval);
+			} catch (Exception e) {
 			}
-			cache.put(fontParam, retval);
 		} else {
 			retval = cache.get(fontParam);
 		}
-
+		if (retval == null) {
+			retval = new BitmapFont();
+		}
 		return retval;
 	}
 }

@@ -21,30 +21,7 @@ import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 public class AssetManagerHelper {
 	
 	public static void loadAssets() {
-		GameUtil.log("Inside loadAssets");
-		// set the loaders for the generator and the fonts themselves
-		FileHandleResolver resolver = new InternalFileHandleResolver();
-		TachyonsJourneyGame.assetManager.setLoader(FreeTypeFontGenerator.class,
-				new FreeTypeFontGeneratorLoader(resolver));
-		TachyonsJourneyGame.assetManager.setLoader(BitmapFont.class, ".ttf",
-				new FreetypeFontLoader(resolver));
-		TachyonsJourneyGame.assetManager.load("fonts/STONB___.TTF",
-				FreeTypeFontGenerator.class);
-		GameUtil.log("here 1");
-		TachyonsJourneyGame.assetManager.finishLoading();
-		// load certain fonts
-		FontParam fontParam = new FontParam();
-		fontParam.setTtfFileName("fonts/STONB___.TTF");
-		fontParam.setText(TitleScreen.CAPTION_TEXT);
-		fontParam.setColor(Color.YELLOW);
-		FontHelper.getTTF(fontParam);
-		GameUtil.log("here 2");
-		fontParam = new FontParam();
-		fontParam.setTtfFileName("fonts/STONB___.TTF");
-		fontParam.setText(BigBangScreen.CAPTION_TEXT);
-		fontParam.setColor(Color.YELLOW);
-		FontHelper.getTTF(fontParam);
-		GameUtil.log("here 3");
+		
 		
 		TachyonsJourneyGame.assetManager.load("music/Loving Everything I Find.mp3", Music.class);
 		TachyonsJourneyGame.assetManager.load("sound/explosion.mp3", Sound.class);
