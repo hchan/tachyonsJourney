@@ -67,13 +67,8 @@ public class BigBangScreen extends BaseScreen {
 			sprite.setSize(width, height);
 			sprite.setRotation(90f * multiplier);
 			sprite.setOrigin(width/2, height/2);
-			sprite.draw(spriteBatch);
-			if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
-				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.0001;
-			} else {
-				multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;
-			}
-
+			sprite.draw(spriteBatch);		
+			multiplier *= (TimeUtils.timeSinceMillis(startTime)/10000) * 1.01;			
 		}
 		if (TimeUtils.timeSinceMillis(startTime) > 10000
 				&& GameUtil.startEventOnce("tachyonScreamingSound")) {

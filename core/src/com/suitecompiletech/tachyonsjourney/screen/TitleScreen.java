@@ -47,9 +47,9 @@ public class TitleScreen extends BaseScreen {
 			// if (deltaTimeBeforeFlush > 0.5) {
 
 			float scaleVelocity = 0.01f;
-			if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
-				scaleVelocity = 0.1f;
-			}
+//			if (Gdx.app.getType().equals(ApplicationType.WebGL)) {
+//				scaleVelocity = 0.1f;
+//			}
 
 			if (!shrinkFont) {
 				curFontScale += scaleVelocity;
