@@ -18,11 +18,11 @@ import com.badlogic.gdx.utils.TimeUtils;
 import com.suitecompiletech.tachyonsjourney.TachyonsJourneyGame;
 import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
-public class SpaceScreen extends BaseScreen {
+public class BlackHoleScreen extends BaseScreen {
 
 	private Model model;
 	private BitmapFont font;
-	public static String CAPTION_TEXT = "And Space";
+	public static String CAPTION_TEXT = "Escape Black Holes";
 	private TachyonWatching tachyonWatching = new TachyonWatching();
 	private ModelBatch modelBatch = new ModelBatch();
 	private Environment environment = new Environment();
@@ -61,10 +61,10 @@ public class SpaceScreen extends BaseScreen {
 
 		modelBatch.begin(camera);
 
-		modelInstance.transform.rotate(Vector3.X, 0.1f);
-		modelInstance.transform.rotate(Vector3.Y, 0.1f);
-		modelInstance.transform.rotate(Vector3.Z, 0.1f);
-		modelInstance.transform.scl(1.005f);
+		modelInstance.transform.rotate(Vector3.X, 0.005f);
+		//modelInstance.transform.rotate(Vector3.Y, 0.5f);
+		//modelInstance.transform.rotate(Vector3.Z, 0.1f);
+	modelInstance.transform.scl(1,1,1.005f);
 		modelBatch.render(modelInstance, environment);
 
 		modelBatch.end();
@@ -99,10 +99,10 @@ public class SpaceScreen extends BaseScreen {
 //		camera.far = 300.0f;
 
 	
-		model = TachyonsJourneyGame.assetManager.get("blender/sphere.g3dj", Model.class);
+		model = TachyonsJourneyGame.assetManager.get("blender/blackHole.g3dj", Model.class);
 		modelInstance = new ModelInstance(model);
-		modelInstance.transform.scale(.010f, .010f, .010f);
-		
+		modelInstance.transform.scale(.0050f, .0050f, .0050f);
+		modelInstance.transform.rotate(Vector3.X, 50.5f);
 	
 		controller = new CameraInputController(camera);
 		Gdx.input.setInputProcessor(controller);
