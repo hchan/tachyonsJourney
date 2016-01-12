@@ -35,6 +35,8 @@ public class AssetManagerHelper {
 		
 		TachyonsJourneyGame.assetManager.load("blender/sphere.g3dj", Model.class);
 		TachyonsJourneyGame.assetManager.load("blender/blackHole.g3dj", Model.class);
+		TachyonsJourneyGame.assetManager.load("blender/terry.g3dj", Model.class);
+		
 		GameUtil.log("leaving loadAssets");
 	}
 }

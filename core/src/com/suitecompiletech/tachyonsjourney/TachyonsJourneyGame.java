@@ -26,8 +26,8 @@ public class TachyonsJourneyGame extends Game {
 		GameUtil.log("finishLoading");
 		assetManager.finishLoading();
 	
-		//setScreen(new TitleScreen());
-		setScreen(new BlackHoleScreen());
+		setScreen(new TitleScreen());
+		//setScreen(new BlackHoleScreen());
 	}
 
 	@Override
