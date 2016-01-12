@@ -2,3 +2,8 @@
 i.e. Failure is Forgivable
 But Lack of Heart
 Is To Lost of Hope
+
+
+Write a "Use the Force" game
+Left Hand Rule (Fleming) to find out which direction 
+the force is going with a current and magnetism
