@@ -6,6 +6,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
 import com.suitecompiletech.tachyonsjourney.screen.BlackHoleScreen;
+import com.suitecompiletech.tachyonsjourney.screen.SpaceScreen;
 import com.suitecompiletech.tachyonsjourney.screen.TitleScreen;
 import com.suitecompiletech.tachyonsjourney.util.GameUtil;
 
@@ -26,8 +27,8 @@ public class TachyonsJourneyGame extends Game {
 		GameUtil.log("finishLoading");
 		assetManager.finishLoading();
 	
-		setScreen(new TitleScreen());
-		//setScreen(new BlackHoleScreen());
+		//setScreen(new TitleScreen());
+		setScreen(new SpaceScreen());
 	}
 
 	@Override

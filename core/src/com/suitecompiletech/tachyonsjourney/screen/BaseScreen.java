@@ -6,9 +6,13 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.PerspectiveCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g3d.Environment;
+import com.badlogic.gdx.graphics.g3d.ModelInstance;
+import com.badlogic.gdx.graphics.g3d.utils.CameraInputController;
 import com.suitecompiletech.tachyonsjourney.font.FontHelper;
 import com.suitecompiletech.tachyonsjourney.font.FontParam;
 
@@ -17,6 +21,9 @@ public class BaseScreen implements Screen {
 	protected float stateTime;
 	protected long startTime = 0;
 	protected GlyphLayout glyphLayout = new GlyphLayout();
+	protected Environment environment = new Environment();
+	protected PerspectiveCamera camera;
+	protected CameraInputController controller;
 	
 	@Override
 	public void show() {

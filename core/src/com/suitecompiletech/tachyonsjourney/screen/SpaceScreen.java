@@ -20,16 +20,15 @@ import com.suitecompiletech.tachyonsjourney.sprite.TachyonWatching;
 
 public class SpaceScreen extends BaseScreen {
 
-	private Model model;
 	private BitmapFont font;
 	public static String CAPTION_TEXT = "And Space";
 	private TachyonWatching tachyonWatching = new TachyonWatching();
 	private ModelBatch modelBatch = new ModelBatch();
-	private Environment environment = new Environment();
-	private PerspectiveCamera camera;
-	private CameraInputController controller;
-	private ModelInstance modelInstance;
-
+	private ModelInstance sphereModelInstance;
+	private Model sphereModel;
+	private ModelInstance terryModelInstance;
+	private Model terryModel;
+	
 	@Override
 	public void render(float delta) {
 		super.render(delta);
@@ -61,11 +60,14 @@ public class SpaceScreen extends BaseScreen {
 
 		modelBatch.begin(camera);
 
-		modelInstance.transform.rotate(Vector3.X, 0.1f);
-		modelInstance.transform.rotate(Vector3.Y, 0.1f);
-		modelInstance.transform.rotate(Vector3.Z, 0.1f);
-		modelInstance.transform.scl(1.005f);
-		modelBatch.render(modelInstance, environment);
+		sphereModelInstance.transform.rotate(Vector3.X, 0.1f);
+		sphereModelInstance.transform.rotate(Vector3.Y, 0.1f);
+		sphereModelInstance.transform.rotate(Vector3.Z, 0.1f);
+		sphereModelInstance.transform.scl(1.005f);
+		
+		terryModelInstance.transform.scl(1.005f);
+		modelBatch.render(terryModelInstance, environment);
+		//modelBatch.render(sphereModelInstance, environment);
 
 		modelBatch.end();
 
@@ -99,11 +101,14 @@ public class SpaceScreen extends BaseScreen {
 //		camera.far = 300.0f;
 
 	
-		model = TachyonsJourneyGame.assetManager.get("blender/sphere.g3dj", Model.class);
-		modelInstance = new ModelInstance(model);
-		modelInstance.transform.scale(.010f, .010f, .010f);
+		sphereModel = TachyonsJourneyGame.assetManager.get("blender/sphere.g3dj", Model.class);
+		sphereModelInstance = new ModelInstance(sphereModel);
+		sphereModelInstance.transform.scale(.010f, .010f, .010f);
 		
-	
+		terryModel = TachyonsJourneyGame.assetManager.get("blender/terry.g3dj", Model.class);
+		terryModelInstance = new ModelInstance(terryModel);
+		terryModelInstance.transform.scale(0.010f, 0.010f, 0.010f);
+		
 		controller = new CameraInputController(camera);
 		Gdx.input.setInputProcessor(controller);
 		
