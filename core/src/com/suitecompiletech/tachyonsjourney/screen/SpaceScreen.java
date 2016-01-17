@@ -66,6 +66,8 @@ public class SpaceScreen extends BaseScreen {
 		sphereModelInstance.transform.scl(1.005f);
 		
 		terryModelInstance.transform.scl(1.005f);
+		environment.add(new DirectionalLight());
+		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.8f, 0.8f, 0.8f, 1f));
 		modelBatch.render(terryModelInstance, environment);
 		//modelBatch.render(sphereModelInstance, environment);
 
